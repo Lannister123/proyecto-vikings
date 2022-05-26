@@ -32,7 +32,9 @@ ademas lo posicionamos del lado derecho con un recubrimiento
 sombreado negro y un borde blanco en la parte inferior*/
 
 .menu {
-    background-color:rgb(30, 90, 133);
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size:cover;
     display: flex;
     position:fixed;
@@ -87,7 +89,6 @@ picture{
 
 h1 {
     text-align: center;
-    color:rgb(127, 158, 186);
     margin-top: 18rem;
     margin-bottom: 5rem;
     font-size: 8em;
@@ -118,6 +119,7 @@ h2{
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 4rem;
+    transform: rotate(-2deg);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -151,12 +153,17 @@ h2.subtitulo {
 
     height:100%;
     width:75%;
-    background-color: rgb(164, 154, 93);
     margin-left: 6rem;
     padding: 0.25 rem 0;
     align-items: center;
     justify-content: space-around;
     cursor: pointer;
+    background: rgba( 231, 220, 88, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .characters:hover {
@@ -243,6 +250,7 @@ h2.subtituloPlataformas{
     width: 100%;
     height:400px;
     margin: 0 4rem;
+    transform: rotate(-90);
 } 
 
 .sinSuscripcion{
@@ -321,7 +329,9 @@ h3.consulta {
 /* -------------------------------------------------------------------------- */
 
 .menuFooter{
-    background-color:rgb(30, 90, 133);
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size:cover;
     display: flex;
     justify-content: space-between;
