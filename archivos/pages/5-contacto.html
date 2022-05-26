@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+		<nav class="menu">
+            <picture>
+                <img src="../icons/SvgjsG1986.svg" alt="imagen" class="logo">
+            </picture>
+			<ul class="menuItems">
+				<li>
+                    <a href="../index.html">HOME</a>
+                </li>
+				<li>
+                    <a href="./2-personajes.html">PERSONAJES</a>
+                </li>
+				<li>
+                    <a href="./3-temporadas.html">TEMPORADAS</a>
+                </li>
+				<li>
+                    <a href="./4-plataformas.html">PLATAFORMAS</a>
+                </li>
+				<li class="active">
+                    <a href="./5-contacto.html">CONTACTO</a>
+                </li>
+			</ul>
+			</ul>
+		</nav>
+	</header>
+
+    <main>
+
+        <section class="redesSociales">
+            <div class="contactImagen">
+            <img src="../images/contact.jpg" alt="imagen" class="contact">
+            <h1 class="tituloContacto">Comunicate con nosotros!</h1>
+            </div>
+            <a href="https://www.facebook.com" target="_blank"><img src="../Icons/icons8-facebook-48.png" alt="imagen"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="../Icons/icons8-instagram-48.png" alt="imagen"></a>
+            <h3 class="consulta">O envianos tu consulta</h3>
+            <div class="holaaa">
+            <form action="./index.js" method="POST" class="formulario" >
+                <label for="Nombreyapellido">Nombre y apellido:</label>
+                <input type="text"  name="Nombreyapellido" required>
+                <label for="email">Email:</label>
+                <input type="email" name="Email" required>
+                <br><br>
+                <textarea name="message"  placeholder="Ingresa tu consulta" class="textArea"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+            </div>
+        </section>
+
+
+</main>
+
+<footer>
+    <div class="menuFooter">
+        <picture>
+            <img src="../icons/SvgjsG1986.svg" alt="imagen" class="logo">
+        </picture>
+        <ul class="menuItems">
+            <li>
+                <a href="https://www.facebook.com" target="_blank"><i><img src="../Icons/icons8-facebook-48.png" alt="imagen"></i></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com" target="_blank"><i><img src="../Icons/icons8-twitter-48.png" alt="imagen"></i></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com" target="_blank"><i><img src="../Icons/icons8-youtube-48.png" alt="imagen"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com" target="_blank"><i><img src="../Icons/icons8-instagram-48.png" alt="imagen"></i></a>
+            </li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
