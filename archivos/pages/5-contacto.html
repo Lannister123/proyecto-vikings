@@ -1,90 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-		<nav class="menu">
+        <nav class="menu">
             <picture>
                 <img src="../icons/SvgjsG1986.svg" alt="imagen" class="logo">
             </picture>
-			<ul class="menuItems">
-				<li>
+            <ul class="menuItems">
+                <li>
                     <a href="../index.html">HOME</a>
                 </li>
-				<li>
+                <li>
                     <a href="./2-personajes.html">PERSONAJES</a>
                 </li>
-				<li>
+                <li>
                     <a href="./3-temporadas.html">TEMPORADAS</a>
                 </li>
-				<li>
+                <li>
                     <a href="./4-plataformas.html">PLATAFORMAS</a>
                 </li>
-				<li class="active">
+                <li class="active">
                     <a href="./5-contacto.html">CONTACTO</a>
                 </li>
-			</ul>
-			</ul>
-		</nav>
-	</header>
+            </ul>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-
         <section class="redesSociales">
-            <div class="contactImagen" >
-            <img src="../images/contact.jpg" alt="imagen" class="contact" data-aos="zoom-in">
-            <h1 class="tituloContacto">Comunicate con nosotros!</h1>
+            <div class="contactImagen">
+                <img src="../images/contact.jpg" alt="imagen" class="contact" data-aos="zoom-in"
+                    class="container-fluid">
+                <h1 class="tituloContacto">Comunicate con nosotros!</h1>
             </div>
-            <a href="https://www.facebook.com" target="_blank"><img src="../Icons/icons8-facebook-48.png" alt="imagen"></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="../Icons/icons8-instagram-48.png" alt="imagen"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="../Icons/icons8-facebook-48.png"
+                    alt="imagen"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="../Icons/icons8-instagram-48.png"
+                    alt="imagen"></a>
             <h3 class="consulta">O envianos tu consulta</h3>
             <div class="holaaa">
-            <form action="./index.js" method="POST" class="formulario" >
-                <label for="Nombreyapellido">Nombre y apellido:</label>
-                <input type="text"  name="Nombreyapellido" required>
-                <label for="email">Email:</label>
-                <input type="email" name="Email" required>
-                <br><br>
-                <textarea name="message"  placeholder="Ingresa tu consulta" class="textArea"></textarea>
-                <input type="submit" value="Enviar">
-            </form>
+                <form action="./index.js" method="POST" class="formulario">
+                    <label for="Nombreyapellido">Nombre y apellido:</label>
+                    <input type="text" name="Nombreyapellido" required>
+                    <label for="email">Email:</label>
+                    <input type="email" name="Email" required>
+                    <br><br>
+                    <textarea name="message" placeholder="Ingresa tu consulta" class="textArea"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
             </div>
         </section>
 
+        <section id="carouselExampleIndicators"  class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/bjron.webp" class="d-block w-100" alt="imagen">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/floki2.webp" class="d-block w-100" alt="imagen">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/NETFLIX.webp" class="d-block w-100" alt="imagen">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
 
-</main>
+    </main>
 
-<footer>
-    <div class="menuFooter">
-        <picture>
-            <img src="../icons/SvgjsG1986.svg" alt="imagen" class="logo">
-        </picture>
-        <ul class="menuItems">
-            <li>
-                <a href="https://www.facebook.com" target="_blank"><i><img src="../Icons/icons8-facebook-48.png" alt="imagen"></i></a>
-            </li>
-            <li>
-                <a href="https://www.twitter.com" target="_blank"><i><img src="../Icons/icons8-twitter-48.png" alt="imagen"></i></a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com" target="_blank"><i><img src="../Icons/icons8-youtube-48.png" alt="imagen"></i></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com" target="_blank"><i><img src="../Icons/icons8-instagram-48.png" alt="imagen"></i></a>
-            </li>
-        </ul>
-    </div>
-</footer>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+    <footer>
+        <div class="menuFooter">
+            <picture>
+                <img src="../icons/SvgjsG1986.svg" alt="imagen" class="logo">
+            </picture>
+            <ul class="menuItems">
+                <li>
+                    <a href="https://www.facebook.com" target="_blank"><i><img src="../Icons/icons8-facebook-48.png"
+                                alt="imagen"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com" target="_blank"><i><img src="../Icons/icons8-twitter-48.png"
+                                alt="imagen"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com" target="_blank"><i><img src="../Icons/icons8-youtube-48.png"
+                                alt="imagen"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank"><i><img src="../Icons/icons8-instagram-48.png"
+                                alt="imagen"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
