@@ -6,39 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vikings proyecto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/hamburger.css" rel="stylesheet">
 </head>
+
 
 <body>
     <header>
         <nav class="menu">
-            <picture>
+            <picture class="animate__animated animate__backInLeft">
                 <img src="./icons/SvgjsG1986.svg" alt="imagen" class="logo">
             </picture>
-			<ul class="menuItems">
-				<li class="active">
+            <button  id="boton" class="hamburger hamburger--collapse" type="button" aria-label="Menu" aria-controls="navigation">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <input type="checkbox"  name="hamburger" id="hamburger">
+            <ul class="menuItems">
+                <li class="active">
                     <a href="index.html">HOME</a>
-                </li> 
-				<li>
+                </li>
+                <li>
                     <a href="./pages/2-personajes.html">PERSONAJES</a>
                 </li>
-				<li>
+                <li>
                     <a href="./pages/3-temporadas.html">TEMPORADAS</a>
                 </li>
-				<li>
+                <li>
                     <a href="./pages/4-plataformas.html">PLATAFORMAS</a>
                 </li>
-				<li>
+                <li>
                     <a href="./pages/5-contacto.html">CONTACTO</a>
                 </li>
-			</ul>
-		</nav>
-	</header>
-<main>
+            </ul>
+        </nav>
+    </header>
+    <main>
 
-    <h1>VIKINGS</h1>
-<section class="texto">
+        <h1>VIKINGS</h1>
+        <section class="texto">
             <p>
                 La serie está inspirada en los cuentos de los nórdicos de la alta edad media escandinava. En líneas
                 generales, sigue las hazañas del legendario jefe vikingo Ragnar Lodbrok y su tripulación, familia y
@@ -50,36 +59,41 @@
                 episodio, o el relato de los varangios del siglo X de Ahmad ibn Fadlan. La serie inicia al comienzo de
                 la época vikinga, marcada por la incursión de Lindisfarne en 793.
             </p>
-</section>
 
-        <article>
-            <h2>Si quieres adentrarte en este mundo nordico,te recomiendo mirar el siguiente trailer:</h2>
-        </article>
 
-        <iframe class="videoCentrado" width="50%" height="550" src="https://www.youtube.com/embed/9GgxinPwAGc"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+            <article>
+                <h2>Si quieres adentrarte en este mundo nordico,te recomiendo mirar el siguiente trailer:</h2>
+            </article>
 
-</main>
+            <iframe class="videoCentrado" width="50%" height="550" src="https://www.youtube.com/embed/9GgxinPwAGc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+        </section>
+    </main>
 
     <footer>
         <div class="menuFooter">
             <picture>
                 <img src="./icons/SvgjsG1986.svg" alt="imagen" class="logo">
             </picture>
-            <ul class="menuItems">
+            <ul class="menuRedes">
                 <li>
-                    <a href="https://www.facebook.com" target="_blank"><i><img src="./icons/icons8-facebook-48.png" alt="imagen"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i><img src="./icons/icons8-facebook-48.png"
+                                alt="imagen"></i></a>
                 </li>
                 <li>
-                    <a href="https://www.twitter.com" target="_blank"><i><img src="./icons/icons8-twitter-48.png" alt="imagen"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i><img src="./icons/icons8-twitter-48.png"
+                                alt="imagen"></i></a>
                 </li>
                 <li>
-                    <a href="https://www.youtube.com" target="_blank"><i><img src="./icons/icons8-youtube-48.png" alt="imagen"></i></a>
+                    <a href="https://www.youtube.com" target="_blank"><i><img src="./icons/icons8-youtube-48.png"
+                                alt="imagen"></i></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com" target="_blank"><i><img src="./icons/icons8-instagram-48.png" alt="imagen"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i><img src="./icons/icons8-instagram-48.png"
+                                alt="imagen"></i></a>
                 </li>
             </ul>
         </div>

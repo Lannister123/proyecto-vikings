@@ -5,15 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="../css/hamburger.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="menu">
-            <picture>
+            <picture class="animate__animated animate__backInLeft">
                 <img src="../icons/SvgjsG1986.svg" alt="imagen" class="logo">
             </picture>
+            <button  id="boton" class="hamburger hamburger--collapse" type="button" aria-label="Menu" aria-controls="navigation">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <input type="checkbox" name="hamburger" id="hamburger">
 			<ul class="menuItems">
 				<li>
                     <a href="../index.html">HOME</a>
@@ -85,7 +93,7 @@
         <picture>
             <img src="../icons/SvgjsG1986.svg" alt="imagen" class="logo">
         </picture>
-        <ul class="menuItems">
+        <ul class="menuRedes">
             <li>
                 <a href="https://www.facebook.com" target="_blank"><i><img src="../Icons/icons8-facebook-48.png" alt="imagen"></i></a>
             </li>

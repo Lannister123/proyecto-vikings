@@ -37,7 +37,6 @@ sombreado negro y un borde blanco en la parte inferior*/
     background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size:cover;
     display: flex;
-    position:fixed;
     justify-content: space-between;
     align-items: center;
     border-bottom: 0.1rem solid #fff;
@@ -55,8 +54,9 @@ picture{
     
 }
 
+
+
 .menuItems{
-    
     display: flex;
     justify-content:space-around;
     list-style:none;
@@ -82,10 +82,32 @@ picture{
     transition: .4s;
 } 
 
+#boton {
+    display:none;
+    
+}
+
+input[type="checkbox"]{
+    width: 128px;
+    height: 36px;
+    position: absolute;
+    top: 147px;
+    display:none;
+}
+
+
+
+
 
 /* -------------------------------------------------------------------------- */
 /*                             Comienza la pagina home                            */
 /* -------------------------------------------------------------------------- */
+
+.texto {
+    display: flex;
+    flex-direction: column;
+}
+
 
 h1 {
     text-align: center;
@@ -100,12 +122,14 @@ h2{
     font-family:Arial, Helvetica, sans-serif;
     font-size:5em;
     text-align:center;
+    margin-bottom: 3rem;
 }
 
 .texto p {
     text-indent: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 3em;
+    margin-bottom:5rem;
     text-align: justify;
     color: rgb(228, 0, 0);
     background-image: url(../Images/shahin-khalaji-DGhN4Tjs2zc-unsplash.jpg);
@@ -120,6 +144,10 @@ h2{
     margin-left: auto;
     margin-bottom: 4rem;
     transform: rotate(-2deg);
+}
+
+.hamburger{
+    display:none;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -351,6 +379,7 @@ h3.consulta {
 
 @media (max-width: 768px) {
     h1 {
+        margin-top:5rem;
         font-size: 6em;
     }
 
@@ -416,4 +445,59 @@ h3.consulta {
     .textArea {
         width:100%;
 }
+
+    ul.menuItems {
+        display:none;
+    }
+
+    nav.menu{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-evenly;
+        align-items:center;
+    }
+
+    .menuItems{
+        display: inline;
+        list-style:none;
+        gap: 2rem;
+        font-size:1em;
+        align-items:center;
+        
+}
+
+    #boton {
+        display:block; 
+    } 
+
+    input[type="checkbox"]{
+        display:block;
+        opacity:0;
+    }
+
+    
+    input[type="checkbox"]:checked ~ ul
+    {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        margin-right:3rem;
+        }  
+        
+
+    .menuItems li a {
+
+        text-decoration:none;
+        font-size: 1.6em;
+        color: rgb(163, 177, 50);
+        }    
+
+    .menuRedes{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style:none;
+        width:70%;
+        } 
 }
