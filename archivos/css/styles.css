@@ -54,8 +54,6 @@ picture{
     
 }
 
-
-
 .menuItems{
     display: flex;
     justify-content:space-around;
@@ -362,10 +360,20 @@ h3.consulta {
     background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size:cover;
     display: flex;
+    flex-direction:row;
     justify-content: space-between;
     align-items: center;
     border-top: 0.1rem solid #fff;
     box-shadow: 0.5rem 0 1rem rgba(0,0,0,.6);
+    width:100%;
+}
+
+.menuRedes{
+    display: flex;
+    justify-content:space-around;
+    list-style:none;
+    gap: 2rem;
+    margin-left:3rem;
     width:100%;
 }
 
