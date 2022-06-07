@@ -1,0 +1,41 @@
+
+/* PAGINA HOME */
+h1 {
+    text-align: center;
+    margin-top: $spacing-large;
+    margin-bottom: $spacing-medium;
+    font-size: $text-large;
+    text-indent: $indent-sangria;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section.texto {
+    display: flex;
+    flex-direction: column;
+    & h2{
+        font-family:$font-subtitulo;
+        font-size:$text-medium;
+        text-align:center;
+        margin-bottom: $spacing-small;
+    }
+    & p {
+        text-indent: $indent-sangria;
+        font-family: $font-texto;
+        font-size: $text-base;
+        margin-bottom:$spacing-medium;
+        text-align: justify;
+        color: rgb(228, 0, 0);
+        background-image: url(../Images/shahin-khalaji-DGhN4Tjs2zc-unsplash.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    & .videoCentrado {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: $spacing-medium;
+        transform: rotate(-2deg);
+    }
+}
+
