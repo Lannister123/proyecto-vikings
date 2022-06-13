@@ -21,15 +21,17 @@ section.texto {
     & p {
         text-indent: $indent-sangria;
         font-family: $font-texto;
-        font-size: $text-base;
+        font-size: $text-medium;
         margin-bottom:$spacing-medium;
         text-align: justify;
-        color: rgb(228, 0, 0);
+        color: map-get($colors,secondary);
         background-image: url(../Images/shahin-khalaji-DGhN4Tjs2zc-unsplash.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
+    
+
     & .videoCentrado {
         display: block;
         margin-right: auto;
@@ -39,3 +41,20 @@ section.texto {
     }
 }
 
+/* MEDIAQUERIES HOME PARA 768px */
+@media (max-width: 768px) {
+    h1 {
+        margin-top:$spacing-medium;
+        font-size: $text-medium;
+    }
+    section.texto{
+        & h2{
+            font-size:$text-base;
+            margin-bottom: $spacing-small;
+        }
+        & p {
+            font-size: $text-base;
+        }
+    }
+
+}

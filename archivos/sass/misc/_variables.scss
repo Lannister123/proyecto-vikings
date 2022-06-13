@@ -2,10 +2,24 @@
     /* colors */
     $text-color:rgb(228, 0, 0);
 
+    /* map colors */
+    $colors: (
+        primary:red,
+        secondary: rgb(0, 247, 255),
+        alternative: rgba(119, 113, 119, 0.823)
+    );
+
+    @each $color, $value in $colors {
+        #{$color} {
+            color: #{$value};
+        }
+    }
+
      /* Spacings 1rem=10px */
     $spacing-small: 2.4rem;
-    $spacing-medium: 5rem;
+    $spacing-medium: 3.5rem;
     $spacing-large: 5rem;
+    $spacing-superlarge: 10rem;
     $indent-sangria:2rem;
 
 
@@ -17,6 +31,6 @@
     /* font sizes */
     $text-large: 6em;
     $text-medium: 3.4em;
-    $text-base: 2.5em;
-    $text-small: 1.4em;
+    $text-base: 2em;
+    $text-small: 1.5em;
 

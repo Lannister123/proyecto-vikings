@@ -1,0 +1,109 @@
+/* PAGINA PERSONAJES */
+
+h2.subtitulo {
+
+    text-align: justify;
+    font-size: $text-medium;
+    margin-left:$spacing-small;
+    margin-right:$spacing-small;
+    color: map-get($colors,secondary);
+}
+
+section.cards {
+    
+    padding: 8rem 0;
+    display: grid;
+    gap: $indent-sangria;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    grid-template-areas:
+        "card1    .       card2"
+        ".      card3         ."
+        "card4    .       card5";
+    & article.characters {
+
+        height:100%;
+        width:75%;
+        margin-left: $spacing-large;
+        padding: 0.25 rem 0;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+        background: rgba( 231, 220, 88, 0.55 );
+        box-shadow: 0 8px 32px 0 rgba(52, 45, 183, 0.37);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        &:hover {
+            box-shadow: 0 0.9rem 0.9rem rgba(0, 0, 0, 0.3);
+        }
+        &:nth-of-type(1) {
+            grid-area: card1;
+        }
+        
+        &:nth-of-type(2) {
+            grid-area: card2;
+        }
+        
+        &:nth-of-type(3) {
+            grid-area: card3;
+        }
+        
+        &:nth-of-type(4) {
+            grid-area: card4;
+        }
+        
+        &:nth-of-type(5) {
+            grid-area: card5;
+        }
+
+        & h3.tituloCharacters {
+            font-family: cursive;
+            font-size: $text-medium;
+            text-align: center;
+        }
+
+        & p.charactersParrafo {
+            padding: 1rem;
+            font-size:$text-small;
+            text-align: justify;
+        }
+
+        & img.imagenCharacters {
+            border-radius: 1em;
+        }
+    
+    }
+}
+
+/* MEDIAQUERIES PERSONAJES */
+
+@media (max-width: 768px) {
+
+    h2.subtitulo {
+
+        text-align: justify;
+        font-size: $text-base;
+        margin-left:$spacing-small;
+        margin-right:$spacing-small;
+        
+    }
+    
+    section.cards {
+        
+        display: flex;
+        flex-direction:column;
+        gap: 2rem;
+        align-items: center;
+        margin-left:auto;
+        margin-right:auto;
+        width:50%;
+        article.characters h3.tituloCharacters {
+            font-size: $text-base;
+        }
+        }
+
+
+}
