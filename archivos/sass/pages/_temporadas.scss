@@ -2,15 +2,24 @@
 
 
 section.temporadas{
+    
     & h2{
-        margin-bottom: $indent-sangria;
-        text-align:left;
-        font-size: $text-large;
+        margin-bottom: $spacing-medium;
+        margin-top: $spacing-medium;
+        text-align:center;
+        font-size: 4vw;
+        color: map-get($colors,primary);
+        text-transform:uppercase;
+        color:white;
+        text-align:center;
+        animation: neonGlow 2s infinite alternate $easeInOutQuad;     
     }
+  
     & h3{
         margin-bottom: $indent-sangria;
         color: map-get($colors,alternative);
         font-size: $text-medium;
+        text-align:center;
     }
 
     & p {

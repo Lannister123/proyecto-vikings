@@ -1,4 +1,25 @@
 /* PAGINA PERSONAJES */
+@font-face {
+    font-family: neon;
+    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+div.container article.personajesNeon {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    vertical-align: middle;
+    & h1.neon{
+        font-family: neon;
+        color: #FB4264;
+        margin-top: 3.5rem;
+        font-size: 7vw;
+        text-shadow: 0 0 3vw #F40A35;
+        animation: neon 1s ease infinite;
+        -moz-animation: neon 1s ease infinite;
+        -webkit-animation: neon 1s ease infinite;
+    }
+  }
 
 h2.subtitulo {
 
@@ -31,11 +52,11 @@ section.cards {
         justify-content: space-around;
         cursor: pointer;
         background: rgba( 231, 220, 88, 0.55 );
-        box-shadow: 0 8px 32px 0 rgba(52, 45, 183, 0.37);
+        box-shadow: 0 8px 32px 0 rgba(252, 2, 2, 0.88);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
         border-radius: 10px;
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        border: 1px solid rgba(252, 2, 2, 0.88);
         &:hover {
             box-shadow: 0 0.9rem 0.9rem rgba(0, 0, 0, 0.3);
         }
@@ -74,7 +95,43 @@ section.cards {
         & img.imagenCharacters {
             border-radius: 1em;
         }
-    
+
+
+        & audio.ragnarAudio{
+            position: absolute;
+            width: 180px;
+            left: 137px;
+            top: 10px;
+            opacity:0;
+        }
+        & audio.lagerthaAudio{
+            position: absolute;
+            width: 181px;
+            top: 9px;
+            left: 124px;
+            opacity: 0;
+        }
+        & audio.bjornAudio{
+            position: absolute;
+            width: 180px;
+            left: 147px;
+            top: 10px;
+            opacity:0;
+        }
+        & audio.rolloAudio{
+            position: absolute;
+            width: 180px;
+            left: 150px;
+            top: 10px;;
+            opacity:0;
+        }
+        & audio.flokiAudio{
+            position: absolute;
+            width: 180px;
+            left: 152px;
+            top: 10px;
+            opacity:0;
+        }
     }
 }
 

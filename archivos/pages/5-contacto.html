@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="../css/hamburger.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -48,13 +49,19 @@
     <main>
 
         <section class="redesSociales">
+            <h1 class="tituloContacto">Comunicate con nosotros!</h1>
             <div class="contactImagen" >
             <img src="../images/contact.jpg" alt="imagen" class="contact" data-aos="zoom-in">
-            <h1 class="tituloContacto">Comunicate con nosotros!</h1>
             </div>
-            <a href="https://www.facebook.com" target="_blank"><img src="../Icons/icons8-facebook-48.png" alt="imagen"></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="../Icons/icons8-instagram-48.png" alt="imagen"></a>
-            <h3 class="consulta">O envianos tu consulta</h3>
+            <div class="wrapper">
+                <div class="static-txt">Encontranos en</div>
+                <ul class="dynamic-txts">
+                    <li><span>Facebook</span></li>
+                    <li><span>Twitter</span></li>
+                    <li><span>Youtube</span></li>
+                    <li><span>Instagram</span></li>
+                </ul>
+            </div>
             <div class="holaaa">
             <form action="./index.js" method="POST" class="formulario" >
                 <label for="Nombreyapellido">Nombre y apellido:</label>
@@ -78,16 +85,18 @@
         </picture>
         <ul class="menuRedes">
             <li>
-                <a href="https://www.facebook.com" target="_blank"><i><img src="../Icons/icons8-facebook-48.png" alt="imagen"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
             </li>
             <li>
-                <a href="https://www.twitter.com" target="_blank"><i><img src="../Icons/icons8-twitter-48.png" alt="imagen"></i></a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
             </li>
             <li>
-                <a href="https://www.youtube.com" target="_blank"><i><img src="../Icons/icons8-youtube-48.png" alt="imagen"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
             </li>
             <li>
-                <a href="https://www.instagram.com" target="_blank"><i><img src="../Icons/icons8-instagram-48.png" alt="imagen"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
             </li>
         </ul>
     </div>

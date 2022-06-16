@@ -1,12 +1,14 @@
 nav.menu {
-    background: #232526;  /* fallback for old browsers */
+    background: #323739;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #414345, #43484a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size:cover;
     @include flex(row,space-between,center,1rem);
     border-bottom: 0.1rem solid #fff;
     box-shadow: 0.5rem 0 1rem rgba(0,0,0,.6);
     width:100%;
+    box-sizing: border-box;
+    transition: all .35s ease;
     picture{
         width: 20%;
         .logo{
@@ -28,11 +30,18 @@ nav.menu {
 
             text-decoration:none;
             font-size: 1.8em;
-            color: #fff;
+            color: rgb(163, 177, 50);
         }
-        li:hover, li.active{
-            background-color: rgba(0,0,0,.3);
+        li a:hover{
+            text-decoration: overline underline;
+            text-decoration-thickness: 2px;
+            font-weight:bold;
+            color:red;
             transition: .4s;
+            background:linear-gradient(to right, #414345, #43484a);
+        }
+        li.active{
+            background-color: rgba(0, 0, 0, 0.3);
         }
     }
     #boton {
@@ -51,6 +60,7 @@ nav.menu {
 
     /* MEDIAQUERIES HEADER */
 
+    
 @media (max-width: 768px){
     nav.menu{
         display:flex;
@@ -60,12 +70,9 @@ nav.menu {
         ul.menuItems {
             display:none;
             list-style:none;
-            gap: 2rem;
-            font-size:1em;
             align-items:center;
-            li a {
+            & li a {
                 text-decoration:none;
-                font-size: 1.6em;
                 color: rgb(163, 177, 50);
                 }
         }
