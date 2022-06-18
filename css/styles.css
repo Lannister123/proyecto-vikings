@@ -242,7 +242,9 @@ section.texto {
     font-size: 2em;
     margin-bottom: 2.4rem; }
   section.texto p {
-    font-size: 2em; } }
+    font-size: 2.4em; }
+  section.texto .videoCentrado {
+    height: 200px; } }
 
 /* PAGINA PERSONAJES */
 @font-face {
@@ -284,7 +286,7 @@ section.cards {
     height: 100%;
     width: 75%;
     margin-left: 5rem;
-    padding: 0.25 rem 0;
+    padding: 0.25rem 0;
     align-items: center;
     justify-content: space-around;
     cursor: pointer;
@@ -492,40 +494,38 @@ section.redesSociales {
     color: white;
     text-align: center;
     animation: neonGlow 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-  section.redesSociales div.wrapper {
-    display: inline-flex; }
-    section.redesSociales div.wrapper div.static-txt {
-      color: #fff;
-      font-size: 6em;
-      font-weight: 400; }
-    section.redesSociales div.wrapper ul.dynamic-txts {
-      margin-left: 15px;
-      height: 90px;
-      line-height: 90px;
-      overflow: hidden; }
-    section.redesSociales div.wrapper ul.dynamic-txts li {
-      color: #fc6d6d;
-      list-style: none;
-      font-size: 6em;
-      font-weight: 500;
-      position: relative;
-      top: 0;
-      animation: slide 6s steps(4) infinite; }
+  section.redesSociales div.wrapper div.static-txt {
+    color: #fff;
+    font-size: 6em;
+    font-weight: 400; }
+  section.redesSociales div.wrapper ul.dynamic-txts {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden; }
+  section.redesSociales div.wrapper ul.dynamic-txts li {
+    color: #fc6d6d;
+    list-style: none;
+    font-size: 6em;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite; }
 
 @keyframes slide {
   100% {
     top: -360px; } }
-    section.redesSociales div.wrapper ul.dynamic-txts li span {
-      position: relative; }
-    section.redesSociales div.wrapper ul.dynamic-txts li span::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background: #000;
-      border-left: 2px solid #fc6d6d;
-      animation: typing 1.5s steps(9) infinite; }
+  section.redesSociales div.wrapper ul.dynamic-txts li span {
+    position: relative; }
+  section.redesSociales div.wrapper ul.dynamic-txts li span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    border-left: 2px solid #fc6d6d;
+    animation: typing 1.5s steps(9) infinite; }
 
 @keyframes typing {
   100% {

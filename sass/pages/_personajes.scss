@@ -12,7 +12,7 @@ div.container article.personajesNeon {
     & h1.neon{
         font-family: neon;
         color: #FB4264;
-        margin-top: 3.5rem;
+        margin-top: $spacing-medium;
         font-size: 7vw;
         text-shadow: 0 0 3vw #F40A35;
         animation: neon 1s ease infinite;
@@ -47,7 +47,7 @@ section.cards {
         height:100%;
         width:75%;
         margin-left: $spacing-large;
-        padding: 0.25 rem 0;
+        padding: 0.25rem 0;
         align-items: center;
         justify-content: space-around;
         cursor: pointer;
