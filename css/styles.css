@@ -320,7 +320,9 @@ section.cards {
       font-size: 1.5em;
       text-align: justify; }
     section.cards article.characters img.imagenCharacters {
-      border-radius: 1em; }
+      border-radius: 1em;
+      width: 100%;
+      height: 250px; }
     section.cards article.characters audio.ragnarAudio {
       position: absolute;
       width: 180px;
@@ -437,13 +439,12 @@ section article h2.subtituloPlataformas {
 section article img.conSuscripcion {
   width: 100%;
   height: 400px;
-  margin: 0 4rem;
-  transform: rotate(-90); }
+  margin: 0 4rem; }
 
 section article img.sinSuscripcion {
   width: 100%;
   height: 400px;
-  margin: 0 4rem 4rem; }
+  margin: 0 4rem; }
 
 section article div.container {
   display: flex;
