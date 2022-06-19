@@ -22,8 +22,9 @@ div.container article.vikingsNeon {
         vertical-align: middle;
         & h1.neon{
             font-family: neon;
+            margin-top: 2rem;
             color: #426DFB;
-            font-size: 7vw;
+            font-size: 12em;
             text-shadow: 0 0 3vw #2356FF;
             animation: neon 1s ease infinite;
             -moz-animation: neon 1s ease infinite;
@@ -39,6 +40,8 @@ section.texto {
         font-size:$text-medium;
         text-align:center;
         margin-bottom: $spacing-small;
+        margin-left:$indent-sangria;
+        margin-right:$indent-sangria;
         color: map-get($colors,secondary);
     }
     & p {
@@ -55,10 +58,10 @@ section.texto {
         background-repeat: no-repeat;
         background-size: cover;
     }
-    
-
     & .videoCentrado {
-        display: block;
+        width:100%;
+        max-width:700px;
+        height:500px;
         margin-right: auto;
         margin-left: auto;
         margin-bottom: $spacing-medium;
@@ -68,14 +71,15 @@ section.texto {
         -webkit-backdrop-filter: blur(5px);
         border-radius: 10px;
         border: 1px solid rgba(13, 1, 234, 0.37);
+
     }
 }
 
 /* MEDIAQUERIES HOME PARA 768px */
 @media (max-width: 768px) {
-    h1 {
+    div.container article.vikingsNeon h1.neon {
         margin-top:$spacing-medium;
-        font-size: $text-medium;
+        font-size: 8em;
     }
     section.texto{
         & h2{
@@ -86,7 +90,8 @@ section.texto {
             font-size: 2.4em;
         }
         & .videoCentrado{
-            height:200px;
+            width:70%;
+            height:412px;
         }
     }
 

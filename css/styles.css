@@ -10,6 +10,9 @@ secondary {
 alternative {
   color: rgba(119, 113, 119, 0.823); }
 
+negro {
+  color: #000; }
+
 /* Spacings 1rem=10px */
 /* font-family */
 /* font sizes */
@@ -30,6 +33,7 @@ body {
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3, auto); }
 
+/* keyframe efecto neon titulos */
 @keyframes neon {
   0%,
   100% {
@@ -44,6 +48,273 @@ body {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 22px rgba(255, 255, 255, 0.8), 0 0 40px rgba(66, 220, 219, 0.8), 0 0 60px rgba(66, 220, 219, 0.8), 0 0 80px rgba(66, 220, 219, 0.5), 0 0 100px rgba(66, 220, 219, 0.5), 0 0 140px rgba(66, 220, 219, 0.5), 0 0 200px rgba(66, 220, 219, 0.5); }
   100% {
     text-shadow: 0 0 2px rgba(255, 255, 255, 0.8), 0 0 8px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(66, 220, 219, 0.8), 0 0 30px rgba(66, 220, 219, 0.8), 0 0 40px rgba(66, 220, 219, 0.8), 0 0 50px rgba(66, 220, 219, 0.5), 0 0 80px rgba(66, 220, 219, 0.5); } }
+
+/* keyframes para subtitulo en pagina personajes */
+@-webkit-keyframes yellow-shadow {
+  0% {
+    top: 0;
+    left: 0; }
+  25% {
+    top: 50%;
+    left: 0; }
+  50% {
+    top: 50%;
+    left: 50%; }
+  75% {
+    top: 0;
+    left: 50%; }
+  100% {
+    top: 0;
+    left: 0; } }
+
+@keyframes yellow-shadow {
+  0% {
+    top: 0;
+    left: 0; }
+  25% {
+    top: 50%;
+    left: 0; }
+  50% {
+    top: 50%;
+    left: 50%; }
+  75% {
+    top: 0;
+    left: 50%; }
+  100% {
+    top: 0;
+    left: 0; } }
+
+@-webkit-keyframes cyan-shadow {
+  0% {
+    right: 0;
+    bottom: 0; }
+  25% {
+    right: 0;
+    bottom: 50%; }
+  50% {
+    right: 50%;
+    bottom: 50%; }
+  75% {
+    right: 50%;
+    bottom: 0; }
+  100% {
+    right: 0;
+    bottom: 0; } }
+
+@keyframes cyan-shadow {
+  0% {
+    right: 0;
+    bottom: 0; }
+  25% {
+    right: 0;
+    bottom: 50%; }
+  50% {
+    right: 50%;
+    bottom: 50%; }
+  75% {
+    right: 50%;
+    bottom: 0; }
+  100% {
+    right: 0;
+    bottom: 0; } }
+
+@-webkit-keyframes gradient-shadow {
+  0% {
+    -webkit-box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0;
+    box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0; }
+  20% {
+    -webkit-box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+    box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff; }
+  40% {
+    -webkit-box-shadow: 0 0 17px 3px #0f0, 0 0 4px 2px #0f0;
+    box-shadow: 0 0 17px 3px #0f0, 0 0 4px 2px #0f0; }
+  60% {
+    -webkit-box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+    box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01; }
+  80% {
+    -webkit-box-shadow: 0 0 17px 3px #f00, 0 0 4px 2px #f00;
+    box-shadow: 0 0 17px 3px #f00, 0 0 4px 2px #f00; }
+  100% {
+    -webkit-box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0;
+    box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0; } }
+
+@keyframes gradient-shadow {
+  0% {
+    -webkit-box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0;
+    box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0; }
+  20% {
+    -webkit-box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+    box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff; }
+  40% {
+    -webkit-box-shadow: 0 0 17px 3px #0f0, 0 0 4px 2px #0f0;
+    box-shadow: 0 0 17px 3px #0f0, 0 0 4px 2px #0f0; }
+  60% {
+    -webkit-box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+    box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01; }
+  80% {
+    -webkit-box-shadow: 0 0 17px 3px #f00, 0 0 4px 2px #f00;
+    box-shadow: 0 0 17px 3px #f00, 0 0 4px 2px #f00; }
+  100% {
+    -webkit-box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0;
+    box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0; } }
+
+@-webkit-keyframes half-yellow-shadow {
+  0% {
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 50%; }
+  16.66% {
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%; }
+  32.32% {
+    top: 0;
+    left: 50%;
+    height: 50%;
+    width: 50%; }
+  49.98% {
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    width: 50%; }
+  66.64% {
+    top: 50%;
+    left: 0;
+    height: 50%;
+    width: 100%; }
+  83.3% {
+    top: 50%;
+    left: 0;
+    height: 50%;
+    width: 50%; }
+  100% {
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 50%; } }
+
+@keyframes half-yellow-shadow {
+  0% {
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 50%; }
+  16.66% {
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%; }
+  32.32% {
+    top: 0;
+    left: 50%;
+    height: 50%;
+    width: 50%; }
+  49.98% {
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    width: 50%; }
+  66.64% {
+    top: 50%;
+    left: 0;
+    height: 50%;
+    width: 100%; }
+  83.3% {
+    top: 50%;
+    left: 0;
+    height: 50%;
+    width: 50%; }
+  100% {
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 50%; } }
+
+@-webkit-keyframes half-cyan-shadow {
+  0% {
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 50%; }
+  16.66% {
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 100%; }
+  32.32% {
+    bottom: 0;
+    right: 50%;
+    height: 50%;
+    width: 50%; }
+  49.98% {
+    bottom: 50%;
+    right: 50%;
+    height: 50%;
+    width: 50%; }
+  66.64% {
+    bottom: 50%;
+    right: 0;
+    height: 50%;
+    width: 100%; }
+  83.3% {
+    bottom: 50%;
+    right: 0;
+    height: 50%;
+    width: 50%; }
+  100% {
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 50%; } }
+
+@keyframes half-cyan-shadow {
+  0% {
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 50%; }
+  16.66% {
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 100%; }
+  32.32% {
+    bottom: 0;
+    right: 50%;
+    height: 50%;
+    width: 50%; }
+  49.98% {
+    bottom: 50%;
+    right: 50%;
+    height: 50%;
+    width: 50%; }
+  66.64% {
+    bottom: 50%;
+    right: 0;
+    height: 50%;
+    width: 100%; }
+  83.3% {
+    bottom: 50%;
+    right: 0;
+    height: 50%;
+    width: 50%; }
+  100% {
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 50%; } }
+
+/* keyframes para animacion en pagina contacto */
+@keyframes slide {
+  100% {
+    top: -360px; } }
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px; } }
 
 /* Partials */
 nav.menu {
@@ -192,8 +463,9 @@ div.container article.vikingsNeon {
   vertical-align: middle; }
   div.container article.vikingsNeon h1.neon {
     font-family: neon;
+    margin-top: 2rem;
     color: #426DFB;
-    font-size: 7vw;
+    font-size: 12em;
     text-shadow: 0 0 3vw #2356FF;
     animation: neon 1s ease infinite;
     -moz-animation: neon 1s ease infinite;
@@ -204,14 +476,16 @@ section.texto {
   flex-direction: column; }
   section.texto h2 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 3.4em;
+    font-size: 3em;
     text-align: center;
     margin-bottom: 2.4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     color: #00f7ff; }
   section.texto p {
     text-indent: 2rem;
     font-family: "Barlow", sans-serif;
-    font-size: 3.4em;
+    font-size: 3em;
     margin-left: 2rem;
     margin-right: 2rem;
     margin-bottom: 3.5rem;
@@ -222,7 +496,9 @@ section.texto {
     background-repeat: no-repeat;
     background-size: cover; }
   section.texto .videoCentrado {
-    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: 500px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 3.5rem;
@@ -235,44 +511,114 @@ section.texto {
 
 /* MEDIAQUERIES HOME PARA 768px */
 @media (max-width: 768px) {
-  h1 {
+  div.container article.vikingsNeon h1.neon {
     margin-top: 3.5rem;
-    font-size: 3.4em; }
+    font-size: 8em; }
   section.texto h2 {
     font-size: 2em;
     margin-bottom: 2.4rem; }
   section.texto p {
     font-size: 2.4em; }
   section.texto .videoCentrado {
-    height: 200px; } }
+    width: 70%;
+    height: 412px; } }
 
 /* PAGINA PERSONAJES */
 @font-face {
   font-family: neon;
   src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf); }
 
-div.container article.personajesNeon {
+section.container article.personajesNeon {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   vertical-align: middle; }
-  div.container article.personajesNeon h1.neon {
+  section.container article.personajesNeon h1.neon {
     font-family: neon;
     color: #FB4264;
     margin-top: 3.5rem;
-    font-size: 7vw;
+    font-size: 12em;
     text-shadow: 0 0 3vw #F40A35;
     animation: neon 1s ease infinite;
     -moz-animation: neon 1s ease infinite;
     -webkit-animation: neon 1s ease infinite; }
 
-h2.subtitulo {
-  text-align: justify;
-  font-size: 3.4em;
-  margin-left: 2.4rem;
-  margin-right: 2.4rem;
-  color: #00f7ff; }
+section.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden; }
+  section.wrapper article.main-div {
+    position: relative;
+    margin: 10px;
+    background-color: transparent; }
+  section.wrapper article.main-div1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 50%;
+    -webkit-box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+    box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+    z-index: -1;
+    -webkit-animation-name: yellow-shadow;
+    animation-name: yellow-shadow;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px; }
+  section.wrapper article.main-div1::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 50%;
+    -webkit-box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+    box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+    z-index: -1;
+    -webkit-animation-name: cyan-shadow;
+    animation-name: cyan-shadow;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px; }
+  section.wrapper article h2 {
+    font-size: 3em;
+    margin: 0;
+    position: relative;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px; }
 
 section.cards {
   padding: 8rem 0;
@@ -313,7 +659,7 @@ section.cards {
       grid-area: card5; }
     section.cards article.characters h3.tituloCharacters {
       font-family: cursive;
-      font-size: 3.4em;
+      font-size: 3em;
       text-align: center; }
     section.cards article.characters p.charactersParrafo {
       padding: 1rem;
@@ -356,11 +702,10 @@ section.cards {
 
 /* MEDIAQUERIES PERSONAJES */
 @media (max-width: 768px) {
-  h2.subtitulo {
-    text-align: justify;
-    font-size: 2em;
-    margin-left: 2.4rem;
-    margin-right: 2.4rem; }
+  section.container article.personajesNeon h1.neon {
+    font-size: 8em; }
+  section.wrapper article h2 {
+    font-size: 3em; }
   section.cards {
     display: flex;
     flex-direction: column;
@@ -370,14 +715,25 @@ section.cards {
     margin-right: auto;
     width: 50%; }
     section.cards article.characters h3.tituloCharacters {
-      font-size: 2em; } }
+      font-size: 2em; }
+    section.cards article.characters audio.ragnarAudio {
+      left: 110px; }
+    section.cards article.characters audio.lagerthaAudio {
+      left: 103px; }
+    section.cards article.characters audio.bjornAudio {
+      left: 119px; }
+    section.cards article.characters audio.rolloAudio {
+      left: 121px; }
+    section.cards article.characters audio.flokiAudio {
+      left: 121px;
+      top: 6px; } }
 
 /* PAGINA TEMPORADAS */
 section.temporadas h2 {
   margin-bottom: 3.5rem;
   margin-top: 3.5rem;
   text-align: center;
-  font-size: 4vw;
+  font-size: 6em;
   color: white;
   text-transform: uppercase;
   color: white;
@@ -387,13 +743,13 @@ section.temporadas h2 {
 section.temporadas h3 {
   margin-bottom: 2rem;
   color: rgba(119, 113, 119, 0.823);
-  font-size: 3.4em;
+  font-size: 3em;
   text-align: center; }
 
 section.temporadas p {
   text-indent: 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2em;
+  font-size: 3em;
   text-align: justify;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -409,14 +765,14 @@ section.temporadas article.temporada6 p {
     flex-direction: column; }
     section.temporadas h2 {
       text-align: center;
-      font-size: 3.4em; }
+      font-size: 4em; }
     section.temporadas h3 {
       margin-bottom: 2rem;
       text-align: center;
-      font-size: 2em; }
+      font-size: 2.5em; }
     section.temporadas p {
       text-align: center;
-      font-size: 1.5em;
+      font-size: 2em;
       text-align: justify;
       margin-left: 2rem;
       margin-right: 2rem; } }
@@ -429,7 +785,7 @@ section article h2.subtituloPlataformas {
   margin-bottom: 3.5rem;
   margin-top: 3.5rem;
   text-align: center;
-  font-size: 4vw;
+  font-size: 6em;
   color: white;
   text-transform: uppercase;
   color: white;
@@ -444,7 +800,8 @@ section article img.conSuscripcion {
 section article img.sinSuscripcion {
   width: 100%;
   height: 400px;
-  margin: 0 4rem; }
+  margin: 0 4rem;
+  margin-bottom: 3rem; }
 
 section article div.container {
   display: flex;
@@ -454,9 +811,9 @@ section article div.container {
 /* MEDIAQUERIES PLATAFORMAS */
 @media (max-width: 768px) {
   section article h2.subtituloPlataformas {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    font-size: 3.4em;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    font-size: 4em;
     text-align: center; }
   section article img.conSuscripcion {
     margin-bottom: 5rem;
@@ -480,8 +837,8 @@ section.redesSociales {
     align-items: center; }
   section.redesSociales img.contact {
     width: 100%;
-    height: 40vw;
-    max-width: 60vw;
+    max-width: 750px;
+    height: 500px;
     margin-top: 3.5rem;
     margin-bottom: 3.5rem; }
   section.redesSociales h1.tituloContacto {
@@ -489,7 +846,7 @@ section.redesSociales {
     margin-bottom: 3.5rem;
     margin-top: 3.5rem;
     text-align: center;
-    font-size: 4vw;
+    font-size: 6em;
     color: white;
     text-transform: uppercase;
     color: white;
@@ -512,31 +869,26 @@ section.redesSociales {
     position: relative;
     top: 0;
     animation: slide 6s steps(4) infinite; }
-
-@keyframes slide {
-  100% {
-    top: -360px; } }
   section.redesSociales div.wrapper ul.dynamic-txts li span {
     position: relative; }
   section.redesSociales div.wrapper ul.dynamic-txts li span::after {
     content: '';
     position: absolute;
     left: 0;
-    height: 100%;
+    height: 108%;
     width: 100%;
     background: #000;
     border-left: 2px solid #fc6d6d;
     animation: typing 1.5s steps(9) infinite; }
-
-@keyframes typing {
-  100% {
-    left: 100%;
-    margin: 0 -35px 0 35px; } }
   section.redesSociales div.holaaa {
     text-align: center; }
   section.redesSociales form.formulario {
     margin-bottom: 10rem;
-    font-size: 2em; }
+    font-size: 3em; }
+    section.redesSociales form.formulario label.formNombreApellido {
+      color: #00f7ff; }
+    section.redesSociales form.formulario label.formEmail {
+      color: #00f7ff; }
     section.redesSociales form.formulario textarea.textArea {
       display: flex;
       margin-left: auto;
@@ -551,13 +903,14 @@ section.redesSociales {
     display: flex;
     flex-direction: column; }
     section.redesSociales img.contact {
-      width: 70%; }
+      width: 70%;
+      height: 400px; }
     section.redesSociales h1.tituloContacto {
       margin-top: 3.5rem;
-      font-size: 4vw; }
+      font-size: 4em; }
     section.redesSociales h3.consulta {
       text-align: center;
-      font-size: 3.4em;
+      font-size: 3em;
       margin-top: 1rem;
       margin-bottom: 5rem; }
     section.redesSociales div.holaaa {
@@ -570,7 +923,7 @@ section.redesSociales {
       display: flex;
       flex-direction: column;
       margin-bottom: 10rem;
-      font-size: 1.5em; }
+      font-size: 2.2em; }
       section.redesSociales form.formulario textarea.textArea {
         display: flex;
         margin-left: auto;

@@ -7,7 +7,7 @@ section.temporadas{
         margin-bottom: $spacing-medium;
         margin-top: $spacing-medium;
         text-align:center;
-        font-size: 4vw;
+        font-size: $text-large;
         color: map-get($colors,primary);
         text-transform:uppercase;
         color:white;
@@ -25,7 +25,7 @@ section.temporadas{
     & p {
         text-indent: $indent-sangria;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: $text-base;
+        font-size: $text-medium;
         text-align: justify;
         margin-left:$indent-sangria;
         margin-right:$indent-sangria;
@@ -45,17 +45,17 @@ section.temporadas{
         flex-direction:column;
         & h2{
             text-align:center;
-            font-size: $text-medium;
+            font-size: 4em;
         }
         & h3{
             margin-bottom: $indent-sangria;
             text-align:center;
-            font-size: $text-base;
+            font-size: 2.5em;
         }
     
         & p {
             text-align:center;
-            font-size: $text-small;
+            font-size: 2em;
             text-align: justify;
             margin-left:$indent-sangria;
             margin-right:$indent-sangria;

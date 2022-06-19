@@ -3,7 +3,7 @@
     font-family: neon;
     src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
 }
-div.container article.personajesNeon {
+section.container article.personajesNeon {
     display:flex;
     justify-content:center;
     align-items:center;
@@ -13,7 +13,7 @@ div.container article.personajesNeon {
         font-family: neon;
         color: #FB4264;
         margin-top: $spacing-medium;
-        font-size: 7vw;
+        font-size: 12em;
         text-shadow: 0 0 3vw #F40A35;
         animation: neon 1s ease infinite;
         -moz-animation: neon 1s ease infinite;
@@ -21,14 +21,88 @@ div.container article.personajesNeon {
     }
   }
 
-h2.subtitulo {
-
-    text-align: justify;
-    font-size: $text-medium;
-    margin-left:$spacing-small;
-    margin-right:$spacing-small;
-    color: map-get($colors,secondary);
+section.wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    & article.main-div{
+        position: relative;
+        margin: 10px;
+        background-color: transparent;
+    }
+    & article.main-div1::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 50%;
+        -webkit-box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+        box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+        z-index: -1;
+        -webkit-animation-name: yellow-shadow;
+        animation-name: yellow-shadow;
+        -webkit-animation-timing-function: ease;
+        animation-timing-function: ease;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;  
+    }
+    & article.main-div1::after{
+        content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 50%;
+    -webkit-box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+    box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+    z-index: -1;
+    -webkit-animation-name: cyan-shadow;
+    animation-name: cyan-shadow;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    }
+    & article h2{
+        font-size: $text-medium;
+        margin: 0;
+        position: relative;
+        padding: 20px;
+        background-color: map-get($colors,negro);
+        color: map-get($colors,primary);
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;  
+    }
 }
+
+
 
 section.cards {
     
@@ -146,14 +220,13 @@ section.cards {
 
 @media (max-width: 768px) {
 
-    h2.subtitulo {
-
-        text-align: justify;
-        font-size: $text-base;
-        margin-left:$spacing-small;
-        margin-right:$spacing-small;
-        
+    section.container article.personajesNeon h1.neon {
+        font-size: 8em; 
     }
+
+    section.wrapper article h2{
+        font-size: 3em;
+    } 
     
     section.cards {
         
@@ -166,6 +239,23 @@ section.cards {
         width:50%;
         article.characters h3.tituloCharacters {
             font-size: $text-base;
+        }
+        article.characters audio.ragnarAudio
+        {
+            left: 110px;
+        }
+        article.characters audio.lagerthaAudio{
+            left: 103px;
+        }
+        article.characters audio.bjornAudio{
+            left: 119px;
+        }
+        article.characters audio.rolloAudio{
+            left: 121px;
+        }
+        article.characters audio.flokiAudio{
+            left: 121px;
+            top: 6px;
         }
         }
 

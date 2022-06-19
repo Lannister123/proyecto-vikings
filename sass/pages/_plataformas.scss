@@ -8,7 +8,7 @@ section {
           margin-bottom: $spacing-medium;
           margin-top: $spacing-medium;
           text-align:center;
-          font-size: 4vw;
+          font-size: 6em;
           color: map-get($colors,primary);
           text-transform:uppercase;
           color:white;
@@ -24,6 +24,7 @@ section {
             width: 100%;
             height:400px;
             margin: 0 4rem;
+            margin-bottom:3rem;
         } 
         article div.container{
             display:flex;
@@ -37,9 +38,9 @@ section {
 @media (max-width: 768px) {
     section {
         article h2.subtituloPlataformas {
-            margin-top:$spacing-large;
-            margin-bottom:$spacing-large;
-            font-size:$text-medium;
+            margin-top:1rem;
+            margin-bottom:4rem;
+            font-size:4em;
             text-align:center;
         }
         article img.conSuscripcion{ 
