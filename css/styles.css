@@ -500,7 +500,7 @@ section.texto {
     font-family: "Barlow", sans-serif;
     font-size: 3em;
     padding: 0rem 12rem 5rem 12rem;
-    /* text-align:center; */
+    text-align: center;
     color: white; }
   section.texto .videoCentrado {
     width: 100%;
@@ -516,23 +516,8 @@ section.texto {
     border-radius: 10px;
     border: 1px solid rgba(13, 1, 234, 0.37); }
 
-/* MEDIAQUERIES HOME DESDE 320px HASTA 480px */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  div.container article.vikingsNeon h1.neon {
-    padding: 0rem 6rem 0rem 4rem;
-    font-size: 5em; }
-  section.texto h2 {
-    font-size: 1.5em;
-    padding: 0rem 7rem 3rem 5rem; }
-  section.texto p {
-    font-size: 1.5em;
-    padding: 0rem 7rem 3rem 6rem; }
-  section.texto .videoCentrado {
-    width: 70%;
-    height: 200px; } }
-
 /* MEDIAQUERIES HOME DESDE 480px HASTA 768px */
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   div.container article.vikingsNeon h1.neon {
     padding: 0rem 6rem 0rem 4rem;
     font-size: 5.6em; }
@@ -542,6 +527,21 @@ section.texto {
   section.texto p {
     font-size: 2em;
     padding: 0rem 7rem 3rem 6rem; }
+  section.texto .videoCentrado {
+    width: 70%;
+    height: 200px; } }
+
+/* MEDIAQUERIES HOME DESDE 320px HASTA 480px */
+@media only screen and (max-width: 480px) {
+  div.container article.vikingsNeon h1.neon {
+    padding: 0rem 6rem 0rem 4rem;
+    font-size: 5em; }
+  section.texto h2 {
+    font-size: 1.5em;
+    padding: 0rem 7rem 3rem 5rem; }
+  section.texto p {
+    font-size: 1.4em;
+    padding: 0rem 4rem 3rem 3rem; }
   section.texto .videoCentrado {
     width: 70%;
     height: 200px; } }
@@ -659,12 +659,10 @@ section.cards {
     align-items: center;
     justify-content: space-around;
     cursor: pointer;
-    background: rgba(231, 220, 88, 0.55);
-    box-shadow: 0 0.9rem 0.9rem rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 10px; }
-    section.cards article.characters:hover {
+    section.cards article.characters img.imagenCharacters:hover {
       box-shadow: 0 8px 32px 0 rgba(252, 2, 2, 0.88);
       backdrop-filter: blur(5px);
       -webkit-backdrop-filter: blur(5px);
@@ -683,11 +681,14 @@ section.cards {
     section.cards article.characters h3.tituloCharacters {
       font-family: cursive;
       font-size: 3em;
-      text-align: center; }
+      text-align: center;
+      color: white;
+      margin-bottom: 3rem; }
     section.cards article.characters p.charactersParrafo {
       padding: 1rem;
       font-size: 1.5em;
-      text-align: justify; }
+      text-align: center;
+      color: white; }
     section.cards article.characters img.imagenCharacters {
       border-radius: 1em;
       width: 100%;
@@ -723,72 +724,112 @@ section.cards {
       top: 10px;
       opacity: 0; }
 
-/* MEDIAQUERIES PERSONAJES DESDE 320px HASTA 480px */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  section.container article.personajesNeon h1.neon {
-    font-size: 4em; }
-  section.wrapper article h2 {
-    font-size: 1.5em; }
-  section.cards {
-    margin-left: 3rem;
-    margin-right: 3rem;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto; }
-    section.cards article.characters h3.tituloCharacters {
-      font-size: 2.5em;
-      margin-top: 2rem; }
-    section.cards article.characters audio.ragnarAudio {
-      left: 110px; }
-    section.cards article.characters audio.lagerthaAudio {
-      left: 103px; }
-    section.cards article.characters audio.bjornAudio {
-      left: 119px; }
-    section.cards article.characters audio.rolloAudio {
-      left: 121px; }
-    section.cards article.characters audio.flokiAudio {
-      left: 121px;
-      top: 6px; }
-    section.cards article.characters p.charactersParrafo {
-      font-size: 1.5em; }
-    section.cards article.characters img.imagenCharacters {
-      height: 200px; } }
-
-/* MEDIAQUERIES PERSONAJES */
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   section.container article.personajesNeon h1.neon {
     font-size: 5.6em; }
   section.wrapper article h2 {
     font-size: 2em; }
   section.cards {
     padding: 0;
-    margin-left: 6rem;
-    margin-right: 6rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto; }
+    margin-right: 4rem; }
     section.cards article.characters h3.tituloCharacters {
-      font-size: 3em; }
-    section.cards article.characters audio.ragnarAudio {
-      left: 110px; }
-    section.cards article.characters audio.lagerthaAudio {
-      left: 103px; }
-    section.cards article.characters audio.bjornAudio {
-      left: 119px; }
-    section.cards article.characters audio.rolloAudio {
-      left: 121px; }
-    section.cards article.characters audio.flokiAudio {
-      left: 121px;
-      top: 6px; }
+      font-size: 3em;
+      margin-top: 2rem;
+      margin-bottom: 2rem; }
+    section.cards article.characters p.charactersParrafo {
+      font-size: 2.5em;
+      text-align: center;
+      margin-bottom: 1rem; }
     section.cards article.characters img.imagenCharacters {
-      height: 300px; } }
+      height: 250px; }
+    section.cards audio.ragnarAudio {
+      position: absolute;
+      width: 180px;
+      left: 137px;
+      top: 10px;
+      opacity: 0; }
+    section.cards audio.lagerthaAudio {
+      position: absolute;
+      width: 181px;
+      top: 9px;
+      left: 124px;
+      opacity: 0; }
+    section.cards audio.bjornAudio {
+      position: absolute;
+      width: 180px;
+      left: 147px;
+      top: 10px;
+      opacity: 0; }
+    section.cards audio.rolloAudio {
+      position: absolute;
+      width: 180px;
+      left: 150px;
+      top: 10px;
+      opacity: 0; }
+    section.cards audio.flokiAudio {
+      position: absolute;
+      width: 180px;
+      left: 152px;
+      top: 10px;
+      opacity: 0; } }
+
+/* MEDIAQUERIES PERSONAJES HASTA 480px */
+@media only screen and (max-width: 480px) {
+  section.container article.personajesNeon h1.neon {
+    font-size: 4em; }
+  section.wrapper article h2 {
+    font-size: 1.5em; }
+  section.cards {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    grid-template-areas: "card1" "card2" "card3" "card4" "card5"; }
+    section.cards article.characters h3.tituloCharacters {
+      font-size: 2em;
+      margin-top: 2rem;
+      margin-bottom: 2rem; }
+    section.cards article.characters p.charactersParrafo {
+      font-size: 1.5em;
+      text-align: center;
+      margin-bottom: 1rem; }
+    section.cards article.characters img.imagenCharacters {
+      height: 135px; }
+    section.cards audio.ragnarAudio {
+      position: absolute;
+      width: 180px;
+      left: 72px;
+      top: 10px;
+      opacity: 0; }
+    section.cards audio.lagerthaAudio {
+      position: absolute;
+      width: 181px;
+      top: 9px;
+      left: 72px;
+      opacity: 0; }
+    section.cards audio.bjornAudio {
+      position: absolute;
+      width: 180px;
+      left: 72px;
+      top: 10px;
+      opacity: 0; }
+    section.cards audio.rolloAudio {
+      position: absolute;
+      width: 180px;
+      left: 72px;
+      top: 10px;
+      opacity: 0; }
+    section.cards audio.flokiAudio {
+      position: absolute;
+      width: 180px;
+      left: 72px;
+      top: 10px;
+      opacity: 0; } }
 
 /* PAGINA TEMPORADAS */
 section.temporadas h2 {
@@ -805,7 +846,8 @@ section.temporadas h2 {
 section.temporadas h3 {
   color: rgba(119, 113, 119, 0.823);
   font-size: 3em;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 3rem; }
 
 section.temporadas p {
   padding: 0rem 12rem 5rem 12rem;
@@ -813,7 +855,7 @@ section.temporadas p {
   text-indent: 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 3em;
-  text-align: justify; }
+  text-align: center; }
 
 section.temporadas img.banner1 {
   width: 80%;
@@ -832,31 +874,8 @@ section.temporadas img.banner6 {
   margin-right: auto;
   margin-bottom: 5rem; }
 
-/* MEDIAQUERIES TEMPORADAS DESDE 320px HASTA 480px */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  section.temporadas {
-    display: flex;
-    flex-direction: column; }
-    section.temporadas h2 {
-      text-align: center;
-      font-size: 2.6em; }
-    section.temporadas h3 {
-      text-align: center;
-      font-size: 2em; }
-    section.temporadas p {
-      padding: 2rem 4rem 3rem 4rem;
-      text-align: center;
-      font-size: 1.5em;
-      text-align: center; }
-    section.temporadas img.banner1 {
-      width: 70%;
-      height: 200px; }
-    section.temporadas img.banner6 {
-      width: 70%;
-      height: 200px; } }
-
 /* MEDIAQUERIES TEMPORADAS DESDE 480px HASTA 768px */
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   section.temporadas {
     display: flex;
     flex-direction: column; }
@@ -870,7 +889,6 @@ section.temporadas img.banner6 {
     section.temporadas p {
       padding: 2rem 4rem 3rem 4rem;
       margin-bottom: 3rem;
-      text-align: center;
       font-size: 2em;
       text-align: center;
       margin-left: 2rem;
@@ -879,6 +897,28 @@ section.temporadas img.banner6 {
       width: 65%; }
     section.temporadas img.banner6 {
       width: 65%; } }
+
+/* MEDIAQUERIES TEMPORADAS DESDE 320px HASTA 480px */
+@media only screen and (max-width: 480px) {
+  section.temporadas {
+    display: flex;
+    flex-direction: column; }
+    section.temporadas h2 {
+      text-align: center;
+      font-size: 2.6em; }
+    section.temporadas h3 {
+      text-align: center;
+      font-size: 2em; }
+    section.temporadas p {
+      padding: 2rem 2rem 3rem 2rem;
+      text-align: center;
+      font-size: 1.5em; }
+    section.temporadas img.banner1 {
+      width: 70%;
+      height: 200px; }
+    section.temporadas img.banner6 {
+      width: 70%;
+      height: 200px; } }
 
 /* @media (max-width: 768px) {
     section.temporadas{
@@ -908,6 +948,10 @@ section.temporadas img.banner6 {
 section article div.container h1 {
   margin-top: 3.5rem; }
 
+section article div.container article.vikingsNeon h1.neon {
+  font-size: 10em;
+  padding: 0; }
+
 section article h2.subtituloPlataformas {
   margin-bottom: 3.5rem;
   margin-top: 3.5rem;
@@ -936,7 +980,10 @@ section article div.container {
   align-items: center; }
 
 /* MEDIAQUERIES PLATAFORMAS */
-@media (max-width: 768px) {
+@media only screen and (max-width: 992px) {
+  section article div.container article.vikingsNeon h1.neon {
+    font-size: 5em;
+    padding: 0; }
   section article h2.subtituloPlataformas {
     margin-top: 1rem;
     margin-bottom: 4rem;
@@ -953,6 +1000,28 @@ section article div.container {
     justify-content: center;
     align-items: center; } }
 
+@media only screen and (max-width: 480px) {
+  section article div.container article.vikingsNeon h1.neon {
+    font-size: 3.2em;
+    padding: 0; }
+  section article h2.subtituloPlataformas {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    font-size: 2.4em;
+    text-align: center; }
+  section article img.conSuscripcion {
+    margin-bottom: 5rem;
+    width: 70%;
+    height: 250px; }
+  section article img.sinSuscripcion {
+    width: 70%;
+    height: 250px; }
+  section article div.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
 /* PAGINA CONTACTO */
 section.redesSociales {
   text-align: center;
@@ -963,7 +1032,7 @@ section.redesSociales {
     justify-content: center;
     align-items: center; }
   section.redesSociales img.contact {
-    width: 100%;
+    width: 85%;
     max-width: 750px;
     height: 500px;
     margin-top: 3.5rem;
@@ -1033,7 +1102,7 @@ section.redesSociales {
       top: -4px; }
 
 /* MEDIAQUERIES CONTACTO */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   section.redesSociales {
     display: flex;
     flex-direction: column; }
@@ -1076,3 +1145,43 @@ section.redesSociales {
       font-size: 4em; }
     section.redesSociales div.wrapper ul.dynamic-txts li span::after {
       height: 140%; } }
+
+@media only screen and (max-width: 480px) {
+  section.redesSociales {
+    display: flex;
+    flex-direction: column; }
+    section.redesSociales img.contact {
+      width: 70%;
+      height: 250px; }
+    section.redesSociales h1.tituloContacto {
+      margin-top: 3.5rem;
+      font-size: 2.5em;
+      padding: 0rem 2rem 0rem 2rem; }
+    section.redesSociales div.holaaa {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+    section.redesSociales form.formulario {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10rem;
+      font-size: 2.2em; }
+      section.redesSociales form.formulario textarea.textArea {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+        width: 100%; }
+      section.redesSociales form.formulario label.formNombreApellido {
+        padding: 1rem; }
+      section.redesSociales form.formulario label.formEmail {
+        padding: 1rem; }
+    section.redesSociales div.wrapper div.static-txt {
+      color: #fff;
+      font-size: 3em; }
+    section.redesSociales div.wrapper ul.dynamic-txts li {
+      font-size: 3em; }
+    section.redesSociales div.wrapper ul.dynamic-txts li span::after {
+      height: 165%; } }
