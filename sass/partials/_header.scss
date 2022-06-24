@@ -33,15 +33,13 @@ nav.menu {
             color: rgb(163, 177, 50);
         }
         li a:hover{
-            text-decoration: overline underline;
-            text-decoration-thickness: 2px;
+            border-bottom: 2px solid crimson;
+            border-top: 2px solid crimson;
             font-weight:bold;
-            color:red;
-            transition: .4s;
-            background:linear-gradient(to right, #414345, #43484a);
+            transition: .1s;
         }
         li.active{
-            background-color: rgba(0, 0, 0, 0.3);
+            border-bottom: 2px solid crimson;
         }
     }
     #boton {
@@ -49,8 +47,8 @@ nav.menu {
         
     }
     input[type="checkbox"]{
-        width: 128px;
-        height: 45px;
+        width: 63px;
+        height: 65px;
         position: absolute;
         top: 147px;
         display:none;
@@ -60,7 +58,24 @@ nav.menu {
 
     /* MEDIAQUERIES HEADER */
 
+@media only screen and (min-width: 320px) and (max-width: 480px) { 
+    nav.menu{
+        input[type="checkbox"]{
+            top: 87px;
+        }
+    }
+
     
+} 
+@media only screen and (min-width: 480px) and (max-width: 768px){
+    nav.menu{
+        input[type="checkbox"]{
+            top: 112px;
+            height: 85px;
+            width: 85px;
+    }
+}
+}
 @media (max-width: 768px){
     nav.menu{
         display:flex;
@@ -74,6 +89,7 @@ nav.menu {
             & li a {
                 text-decoration:none;
                 color: rgb(163, 177, 50);
+                font-size:1.5em;
                 }
         }
         #boton {
@@ -82,6 +98,7 @@ nav.menu {
         input[type="checkbox"]{
             display:block;
             opacity:0;
+            
             &:checked ~ ul {
                 display:flex;
                 flex-direction:column;

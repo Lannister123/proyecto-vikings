@@ -13,7 +13,7 @@ section.container article.personajesNeon {
         font-family: neon;
         color: #FB4264;
         margin-top: $spacing-medium;
-        font-size: 12em;
+        font-size: 8em;
         text-shadow: 0 0 3vw #F40A35;
         animation: neon 1s ease infinite;
         -moz-animation: neon 1s ease infinite;
@@ -215,30 +215,31 @@ section.cards {
         }
     }
 }
+/* MEDIAQUERIES PERSONAJES DESDE 320px HASTA 480px */
 
-/* MEDIAQUERIES PERSONAJES */
-
-@media (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 480px){
 
     section.container article.personajesNeon h1.neon {
-        font-size: 8em; 
+        font-size: 4em; 
     }
 
     section.wrapper article h2{
-        font-size: 3em;
+        font-size: 1.5em;
     } 
     
     section.cards {
-        
+        margin-left: 3rem;
+        margin-right: 3rem;
+        padding:0;
         display: flex;
         flex-direction:column;
         gap: 2rem;
         align-items: center;
         margin-left:auto;
         margin-right:auto;
-        width:50%;
         article.characters h3.tituloCharacters {
-            font-size: $text-base;
+            font-size: 2.5em;
+            margin-top: 2rem;
         }
         article.characters audio.ragnarAudio
         {
@@ -257,7 +258,61 @@ section.cards {
             left: 121px;
             top: 6px;
         }
+        
+        article.characters p.charactersParrafo{
+            font-size: 1.5em;
         }
+        article.characters img.imagenCharacters{
+            height:200px;
+        }
+    }
 
+}
 
+/* MEDIAQUERIES PERSONAJES */
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+
+    section.container article.personajesNeon h1.neon {
+        font-size: 5.6em; 
+    }
+
+    section.wrapper article h2{
+        font-size: 2em;
+    } 
+    
+    section.cards {
+        padding:0;
+        margin-left: 6rem;
+        margin-right: 6rem;
+        display: flex;
+        flex-direction:column;
+        gap: 2rem;
+        align-items: center;
+        margin-left:auto;
+        margin-right:auto;
+        article.characters h3.tituloCharacters {
+            font-size: 3em;
+        }
+        article.characters audio.ragnarAudio
+        {
+            left: 110px;
+        }
+        article.characters audio.lagerthaAudio{
+            left: 103px;
+        }
+        article.characters audio.bjornAudio{
+            left: 119px;
+        }
+        article.characters audio.rolloAudio{
+            left: 121px;
+        }
+        article.characters audio.flokiAudio{
+            left: 121px;
+            top: 6px;
+        }
+        article.characters img.imagenCharacters{
+            height:300px;
+        }
+        }
 }

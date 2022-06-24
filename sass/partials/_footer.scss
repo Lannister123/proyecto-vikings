@@ -23,6 +23,7 @@ div.menuFooter{
         border-radius: 70%;
         font-size: 3.5em;
         transition: .2s;
+        color:white;
       }
     & ul.menuRedes li a::before {
         width: 100%;
@@ -43,4 +44,14 @@ div.menuFooter{
         box-shadow: 0 0 5px #ffee10;
         text-shadow: 0 0 5px #ffee10;
       }
+}
+
+/* MEDIAQUERIES FOOTER PARA 320px */
+@media only screen and (max-width: 320px) {
+  div.menuFooter{
+    & picture img.logo{
+      width:84%;
+    }
+  }
+
 }

@@ -39,24 +39,16 @@ section.texto {
         font-family:$font-subtitulo;
         font-size:$text-medium;
         text-align:center;
-        margin-bottom: $spacing-small;
-        margin-left:$indent-sangria;
-        margin-right:$indent-sangria;
+        padding: 0rem 5rem 5rem 5rem;
         color: map-get($colors,secondary);
     }
     & p {
         text-indent: $indent-sangria;
         font-family: $font-texto;
         font-size: $text-medium;
-        margin-left:$indent-sangria;
-        margin-right:$indent-sangria;
-        margin-bottom:$spacing-medium;
-        text-align: justify;
+        padding: 0rem 12rem 5rem 12rem;
+        /* text-align:center; */
         color: map-get($colors,secondary);
-        background-image: url(../Images/shahin-khalaji-DGhN4Tjs2zc-unsplash.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     & .videoCentrado {
         width:100%;
@@ -75,24 +67,51 @@ section.texto {
     }
 }
 
-/* MEDIAQUERIES HOME PARA 768px */
-@media (max-width: 768px) {
+
+
+/* MEDIAQUERIES HOME DESDE 320px HASTA 480px */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
     div.container article.vikingsNeon h1.neon {
-        margin-top:$spacing-medium;
-        font-size: 8em;
+        padding: 0rem 6rem 0rem 4rem;
+        font-size: 5em;
     }
     section.texto{
         & h2{
-            font-size:$text-base;
-            margin-bottom: $spacing-small;
+            font-size: 1.5em;
+            padding: 0rem 7rem 3rem 5rem;
         }
         & p {
-            font-size: 2.4em;
+            font-size: 1.5em;
+            padding: 0rem 7rem 3rem 6rem;
         }
         & .videoCentrado{
             width:70%;
-            height:412px;
+            height:200px;
         }
     }
-
 }
+/* MEDIAQUERIES HOME DESDE 480px HASTA 768px */
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    div.container article.vikingsNeon h1.neon {
+        padding: 0rem 6rem 0rem 4rem;
+        font-size: 5.6em;
+    }
+    section.texto{
+        & h2{
+            font-size: 2em;
+            padding: 0rem 7rem 3rem 5rem;
+        }
+        & p {
+            font-size: 2em;
+            padding: 0rem 7rem 3rem 6rem;
+        }
+        & .videoCentrado{
+            width:70%;
+            height:200px;
+        }
+    }
+}
+
+
+
+

@@ -40,7 +40,7 @@ section.redesSociales{
         overflow:hidden;
         }
         ul.dynamic-txts li{
-        color:#fc6d6d;
+        color:rgb(163, 177, 50);
         list-style:none;
         font-size:6em;
         font-weight:500;
@@ -59,7 +59,7 @@ section.redesSociales{
         height:108%;
         width:100%;
         background:#000;
-        border-left:2px solid #fc6d6d;
+        border-left:2px solid rgb(163, 177, 50);
         animation: typing 1.5s steps(9) infinite;    
         }
 
@@ -85,6 +85,16 @@ section.redesSociales{
             margin-top: 1rem;
             width:70%;
             height:150px;
+        }
+        input.centrarNombreApellido{
+            position:relative;
+            padding:2px;
+            top:-4px;
+        }
+        input.centrarEmail{
+            position:relative;
+            padding:2px;
+            top:-4px;
         }
     }
 
@@ -131,7 +141,24 @@ section.redesSociales{
                 width:100%;
                 
             }
+            label.formNombreApellido{
+                padding:1rem;
+            }
+            label.formEmail{
+                padding:1rem;
+            }
     }
-
+        & div.wrapper{ 
+            div.static-txt{
+            color:#fff;
+            font-size:4em;
+        }
+        ul.dynamic-txts li{
+            font-size:4em;
+            }
+        ul.dynamic-txts li span::after{
+            height: 140%;
+            }
+    }
 }
 }
