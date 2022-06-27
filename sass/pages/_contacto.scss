@@ -89,6 +89,16 @@ section.redesSociales{
             width:70%;
             height:150px;
         }
+        input.centrarNombreApellido{
+            padding: 2px 0px 0px 0px;
+            position: relative;
+            top: -3px;
+        }
+        input.centrarEmail{
+            padding: 2px 0px 0px 0px;
+            position: relative;
+            top: -3px;
+        }
         .boton {
             display: inline-flex;
             align-items: center;

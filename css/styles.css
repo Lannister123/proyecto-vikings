@@ -1127,6 +1127,14 @@ section.redesSociales {
       margin-top: 1rem;
       width: 70%;
       height: 150px; }
+    section.redesSociales form.formulario input.centrarNombreApellido {
+      padding: 2px 0px 0px 0px;
+      position: relative;
+      top: -3px; }
+    section.redesSociales form.formulario input.centrarEmail {
+      padding: 2px 0px 0px 0px;
+      position: relative;
+      top: -3px; }
     section.redesSociales form.formulario .boton {
       display: inline-flex;
       align-items: center;
