@@ -724,36 +724,6 @@ section.cards {
       border-radius: 1em;
       width: 100%;
       height: 250px; }
-    section.cards article.characters audio.ragnarAudio {
-      position: absolute;
-      width: 180px;
-      left: 137px;
-      top: 10px;
-      opacity: 0; }
-    section.cards article.characters audio.lagerthaAudio {
-      position: absolute;
-      width: 181px;
-      top: 9px;
-      left: 124px;
-      opacity: 0; }
-    section.cards article.characters audio.bjornAudio {
-      position: absolute;
-      width: 180px;
-      left: 147px;
-      top: 10px;
-      opacity: 0; }
-    section.cards article.characters audio.rolloAudio {
-      position: absolute;
-      width: 180px;
-      left: 150px;
-      top: 10px;
-      opacity: 0; }
-    section.cards article.characters audio.flokiAudio {
-      position: absolute;
-      width: 180px;
-      left: 152px;
-      top: 10px;
-      opacity: 0; }
 
 @media only screen and (max-width: 992px) {
   section.container article.personajesNeon h1.neon {
@@ -776,37 +746,7 @@ section.cards {
       text-align: center;
       margin-bottom: 1rem; }
     section.cards article.characters img.imagenCharacters {
-      height: 250px; }
-    section.cards audio.ragnarAudio {
-      position: absolute;
-      width: 180px;
-      left: 137px;
-      top: 10px;
-      opacity: 0; }
-    section.cards audio.lagerthaAudio {
-      position: absolute;
-      width: 181px;
-      top: 9px;
-      left: 124px;
-      opacity: 0; }
-    section.cards audio.bjornAudio {
-      position: absolute;
-      width: 180px;
-      left: 147px;
-      top: 10px;
-      opacity: 0; }
-    section.cards audio.rolloAudio {
-      position: absolute;
-      width: 180px;
-      left: 150px;
-      top: 10px;
-      opacity: 0; }
-    section.cards audio.flokiAudio {
-      position: absolute;
-      width: 180px;
-      left: 152px;
-      top: 10px;
-      opacity: 0; } }
+      height: 250px; } }
 
 /* MEDIAQUERIES PERSONAJES HASTA 480px */
 @media only screen and (max-width: 480px) {
@@ -830,37 +770,7 @@ section.cards {
       text-align: center;
       margin-bottom: 1rem; }
     section.cards article.characters img.imagenCharacters {
-      height: 135px; }
-    section.cards audio.ragnarAudio {
-      position: absolute;
-      width: 180px;
-      left: 72px;
-      top: 10px;
-      opacity: 0; }
-    section.cards audio.lagerthaAudio {
-      position: absolute;
-      width: 181px;
-      top: 9px;
-      left: 72px;
-      opacity: 0; }
-    section.cards audio.bjornAudio {
-      position: absolute;
-      width: 180px;
-      left: 72px;
-      top: 10px;
-      opacity: 0; }
-    section.cards audio.rolloAudio {
-      position: absolute;
-      width: 180px;
-      left: 72px;
-      top: 10px;
-      opacity: 0; }
-    section.cards audio.flokiAudio {
-      position: absolute;
-      width: 180px;
-      left: 72px;
-      top: 10px;
-      opacity: 0; } }
+      height: 135px; } }
 
 /* PAGINA TEMPORADAS */
 section.temporadas h2 {
@@ -905,7 +815,7 @@ section.temporadas img.banner6 {
   margin-right: auto;
   margin-bottom: 5rem; }
 
-/* MEDIAQUERIES TEMPORADAS DESDE 480px HASTA 768px */
+/* MEDIAQUERIES TEMPORADAS  HASTA 768px */
 @media only screen and (max-width: 768px) {
   section.temporadas {
     display: flex;
@@ -929,7 +839,7 @@ section.temporadas img.banner6 {
     section.temporadas img.banner6 {
       width: 65%; } }
 
-/* MEDIAQUERIES TEMPORADAS DESDE 320px HASTA 480px */
+/* MEDIAQUERIES TEMPORADAS HASTA 480px */
 @media only screen and (max-width: 480px) {
   section.temporadas {
     display: flex;

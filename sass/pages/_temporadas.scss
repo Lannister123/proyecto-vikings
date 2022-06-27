@@ -36,7 +36,8 @@ section.temporadas{
         height:300px;
         display: block;
         margin-left: auto;
-        margin-right: auto;     
+        margin-right: auto; 
+            
     }
     & img.banner6{
         width:80%;
@@ -50,7 +51,7 @@ section.temporadas{
 
 }
 
-/* MEDIAQUERIES TEMPORADAS DESDE 480px HASTA 768px */
+/* MEDIAQUERIES TEMPORADAS  HASTA 768px */
 @media only screen and (max-width: 768px) {
     section.temporadas{
         display:flex;
@@ -82,7 +83,7 @@ section.temporadas{
     }
 }
 
-/* MEDIAQUERIES TEMPORADAS DESDE 320px HASTA 480px */
+/* MEDIAQUERIES TEMPORADAS HASTA 480px */
 @media only screen and (max-width: 480px) {
     section.temporadas{
         display:flex;
