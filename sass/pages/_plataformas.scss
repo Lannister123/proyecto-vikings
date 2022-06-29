@@ -1,5 +1,6 @@
 /* PAGINA PLATAFORMAS */
 
+/* En una misma section se le da estilos para las dos opciones con suscripcion y sin suscripcion con sus imagenes */
 section {
         article div.container h1{
           margin-top: 3.5rem;
@@ -13,9 +14,8 @@ section {
           margin-top: $spacing-medium;
           text-align:center;
           font-size: 6em;   
-          color: map-get($colors,primary);
           text-transform:uppercase;
-          color:white;
+          color: map-get($colors,secondary);
           text-align:center;
           animation: neonGlow 2s infinite alternate $easeInOutQuad;
         }
@@ -37,8 +37,7 @@ section {
         }
 }
 
-/* MEDIAQUERIES PLATAFORMAS */
-
+/* Mediaqueries plataformas hasta 992px */
 @media only screen and (max-width: 992px) {
     section {
 
@@ -68,7 +67,7 @@ section {
         }
 }
 }
-
+/* Mediaqueries plataformas hasta 480px */
 @media only screen and (max-width: 480px) {
     section {
         article div.container article.vikingsNeon h1.neon {

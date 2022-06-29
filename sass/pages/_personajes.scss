@@ -3,12 +3,15 @@
     font-family: neon;
     src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
 }
+
+/* Titulo personajes con neon azul */
 section.container article.personajesNeon {
     display:flex;
     justify-content:center;
     align-items:center;
     text-align: center;
     vertical-align: middle;
+    margin-bottom:$spacing-medium;
     & h1.neon{
         font-family: neon;
         color: #FB4264;
@@ -21,6 +24,7 @@ section.container article.personajesNeon {
     }
   }
 
+/* subtitulo cinco personajes principales animado */
 section.wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -93,7 +97,7 @@ section.wrapper {
         position: relative;
         padding: 20px;
         background-color: map-get($colors,negro);
-        color: map-get($colors,primary);
+        color: map-get($colors,secondary);
         border-radius: 5px;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
@@ -101,6 +105,8 @@ section.wrapper {
         -o-border-radius: 5px;  
     }
 }
+
+/* Parte cards de los personajes principales */
 
 section.cards {
     
@@ -178,7 +184,7 @@ section.cards {
     }
 }
 
-
+/* Mediaqueries personajes hasta 992px */
 @media only screen and (max-width: 992px) {
 
     section.container article.personajesNeon h1.neon {
@@ -212,16 +218,18 @@ section.cards {
         
         }
 }
-/* MEDIAQUERIES PERSONAJES HASTA 480px */
+/* Mediaqueries personajes hasta 480px */
 
 @media only screen and (max-width: 480px){
 
     section.container article.personajesNeon h1.neon {
-        font-size: 4em; 
+        font-size: 4em;
+        
     }
 
     section.wrapper article h2{
         font-size: 1.5em;
+        text-align:center; 
     } 
     
         section.cards {

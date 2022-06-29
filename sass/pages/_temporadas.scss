@@ -1,6 +1,6 @@
 /* PAGINA TEMPORADAS */
 
-
+/* En una misma section se le da estilos para todas las temporadas con sus subtitulos y textos */
 section.temporadas{
     
     & h2{
@@ -37,7 +37,7 @@ section.temporadas{
         display: block;
         margin-left: auto;
         margin-right: auto; 
-            
+        margin-bottom:$spacing-superlarge;    
     }
     & img.banner6{
         width:80%;
@@ -51,7 +51,7 @@ section.temporadas{
 
 }
 
-/* MEDIAQUERIES TEMPORADAS  HASTA 768px */
+/* Mediaqueries temporadas hasta 768px */
 @media only screen and (max-width: 768px) {
     section.temporadas{
         display:flex;
@@ -83,7 +83,7 @@ section.temporadas{
     }
 }
 
-/* MEDIAQUERIES TEMPORADAS HASTA 480px */
+/* Mediaqueries temporadas hasta 480px */
 @media only screen and (max-width: 480px) {
     section.temporadas{
         display:flex;
@@ -95,6 +95,7 @@ section.temporadas{
         & h3{
             text-align:center;
             font-size: 2em;
+            margin-bottom: 1rem;
         }
     
         & p {
@@ -104,40 +105,13 @@ section.temporadas{
         }
         & img.banner1{
             width: 70%;
-            height: 200px;          
+            height: 200px;
+            margin-bottom:$spacing-medium;          
         }
         & img.banner6{
             width: 70%;
-            height: 200px;          
+            height: 200px; 
+            margin-bottom:$spacing-medium;        
         }
     }
 }
-
-
-
-
-
-/* @media (max-width: 768px) {
-    section.temporadas{
-        display:flex;
-        flex-direction:column;
-        & h2{
-            text-align:center;
-            font-size: 4em;
-        }
-        & h3{
-            margin-bottom: $indent-sangria;
-            text-align:center;
-            font-size: 2.5em;
-        }
-    
-        & p {
-            text-align:center;
-            font-size: 2.2em;
-            text-align: justify;
-            margin-left:$indent-sangria;
-            margin-right:$indent-sangria;
-        }
-    }
-
-} */

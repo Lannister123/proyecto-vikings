@@ -1,8 +1,12 @@
 /* Misc */
-/* colors */
-/* map colors */
-primary {
-  color: white; }
+/* -------------------------------------------------------------------------- */
+/*                                   colors                                   */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                 map colors                                 */
+/* -------------------------------------------------------------------------- */
+headercolor {
+  color: #a3b132; }
 
 secondary {
   color: white; }
@@ -13,9 +17,15 @@ alternative {
 negro {
   color: #000; }
 
-/* Spacings 1rem=10px */
-/* font-family */
-/* font sizes */
+/* -------------------------------------------------------------------------- */
+/*                             Spacings 1rem=10px                             */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                 font-family                                */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                 font sizes                                 */
+/* -------------------------------------------------------------------------- */
 /* Normalizaciones */
 * {
   margin: 0;
@@ -371,6 +381,7 @@ nav.menu {
     top: 147px;
     display: none; }
 
+/* mediaqueries header hasta 768px */
 @media only screen and (max-width: 768px) {
   nav.menu {
     display: flex;
@@ -400,45 +411,11 @@ nav.menu {
         align-items: center;
         margin-right: 3rem; } }
 
-/* MEDIAQUERIES HEADER */
+/* mediaqueries header hasta 480px */
 @media only screen and (max-width: 480px) {
   nav.menu input[type="checkbox"] {
     top: 53px; } }
 
-/* @media (max-width: 768px){
-    nav.menu{
-        display:flex;
-        flex-direction:column;
-        justify-content:space-evenly;
-        align-items:center;
-        ul.menuItems {
-            display:none;
-            list-style:none;
-            align-items:center;
-            & li a {
-                text-decoration:none;
-                color: rgb(163, 177, 50);
-                font-size:1.5em;
-                }
-        }
-        #boton {
-            display:block; 
-        } 
-        input[type="checkbox"]{
-            display:block;
-            opacity:0;
-            
-            &:checked ~ ul {
-                display:flex;
-                flex-direction:column;
-                justify-content:center;
-                align-items:center;
-                margin-right:3rem;
-                } 
-        }
-    }
-
-} */
 div.menuFooter {
   background: #232526;
   /* fallback for old browsers */
@@ -482,28 +459,22 @@ div.menuFooter {
     box-shadow: 0 0 5px #ffee10;
     text-shadow: 0 0 5px #ffee10; }
 
-/* MEDIAQUERIES FOOTER PARA 320px */
+/* mediaqueries footer hasta 480px */
 @media only screen and (max-width: 480px) {
   div.menuFooter picture img.logo {
     width: 84%; } }
 
 /* Pages */
 /* PAGINA HOME */
-h1 {
-  text-align: center;
-  /* margin-top: $spacing-medium; */
-  margin-bottom: 3.5rem;
-  font-size: 6em;
-  text-indent: 2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
-
 @font-face {
   font-family: neon;
   src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf); }
 
+/* Titulo vikings con efecto neon azul */
 div.container article.vikingsNeon {
   display: flex;
   justify-content: center;
+  margin-bottom: 3.5rem;
   align-items: center;
   text-align: center;
   vertical-align: middle; }
@@ -517,6 +488,7 @@ div.container article.vikingsNeon {
     -moz-animation: neon 1s ease infinite;
     -webkit-animation: neon 1s ease infinite; }
 
+/* Aca empezaria el texto introductorio, un subtitulo y el video */
 section.texto {
   display: flex;
   flex-direction: column; }
@@ -547,7 +519,7 @@ section.texto {
     border-radius: 10px;
     border: 1px solid rgba(13, 1, 234, 0.37); }
 
-/* MEDIAQUERIES HOME DESDE 480px HASTA 768px */
+/* Mediaqueries home hasta 768px */
 @media only screen and (max-width: 768px) {
   div.container article.vikingsNeon h1.neon {
     padding: 0rem 6rem 0rem 4rem;
@@ -562,7 +534,7 @@ section.texto {
     width: 70%;
     height: 200px; } }
 
-/* MEDIAQUERIES HOME DESDE 320px HASTA 480px */
+/* Mediaqueries home hasta 480px */
 @media only screen and (max-width: 480px) {
   div.container article.vikingsNeon h1.neon {
     padding: 0rem 6rem 0rem 4rem;
@@ -582,12 +554,14 @@ section.texto {
   font-family: neon;
   src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf); }
 
+/* Titulo personajes con neon azul */
 section.container article.personajesNeon {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  vertical-align: middle; }
+  vertical-align: middle;
+  margin-bottom: 3.5rem; }
   section.container article.personajesNeon h1.neon {
     font-family: neon;
     color: #FB4264;
@@ -598,6 +572,7 @@ section.container article.personajesNeon {
     -moz-animation: neon 1s ease infinite;
     -webkit-animation: neon 1s ease infinite; }
 
+/* subtitulo cinco personajes principales animado */
 section.wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -674,6 +649,7 @@ section.wrapper {
     -ms-border-radius: 5px;
     -o-border-radius: 5px; }
 
+/* Parte cards de los personajes principales */
 section.cards {
   padding: 8rem 0;
   display: grid;
@@ -725,6 +701,7 @@ section.cards {
       width: 100%;
       height: 250px; }
 
+/* Mediaqueries personajes hasta 992px */
 @media only screen and (max-width: 992px) {
   section.container article.personajesNeon h1.neon {
     font-size: 5.6em; }
@@ -748,12 +725,13 @@ section.cards {
     section.cards article.characters img.imagenCharacters {
       height: 250px; } }
 
-/* MEDIAQUERIES PERSONAJES HASTA 480px */
+/* Mediaqueries personajes hasta 480px */
 @media only screen and (max-width: 480px) {
   section.container article.personajesNeon h1.neon {
     font-size: 4em; }
   section.wrapper article h2 {
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    text-align: center; }
   section.cards {
     display: grid;
     gap: 2rem;
@@ -773,12 +751,12 @@ section.cards {
       height: 135px; } }
 
 /* PAGINA TEMPORADAS */
+/* En una misma section se le da estilos para todas las temporadas con sus subtitulos y textos */
 section.temporadas h2 {
   margin-bottom: 3.5rem;
   margin-top: 3.5rem;
   text-align: center;
   font-size: 6em;
-  color: white;
   text-transform: uppercase;
   color: white;
   text-align: center;
@@ -804,7 +782,8 @@ section.temporadas img.banner1 {
   height: 300px;
   display: block;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-bottom: 10rem; }
 
 section.temporadas img.banner6 {
   width: 80%;
@@ -815,7 +794,7 @@ section.temporadas img.banner6 {
   margin-right: auto;
   margin-bottom: 5rem; }
 
-/* MEDIAQUERIES TEMPORADAS  HASTA 768px */
+/* Mediaqueries temporadas hasta 768px */
 @media only screen and (max-width: 768px) {
   section.temporadas {
     display: flex;
@@ -839,7 +818,7 @@ section.temporadas img.banner6 {
     section.temporadas img.banner6 {
       width: 65%; } }
 
-/* MEDIAQUERIES TEMPORADAS HASTA 480px */
+/* Mediaqueries temporadas hasta 480px */
 @media only screen and (max-width: 480px) {
   section.temporadas {
     display: flex;
@@ -849,43 +828,23 @@ section.temporadas img.banner6 {
       font-size: 2.6em; }
     section.temporadas h3 {
       text-align: center;
-      font-size: 2em; }
+      font-size: 2em;
+      margin-bottom: 1rem; }
     section.temporadas p {
       padding: 2rem 2rem 3rem 2rem;
       text-align: center;
       font-size: 1.5em; }
     section.temporadas img.banner1 {
       width: 70%;
-      height: 200px; }
+      height: 200px;
+      margin-bottom: 3.5rem; }
     section.temporadas img.banner6 {
       width: 70%;
-      height: 200px; } }
+      height: 200px;
+      margin-bottom: 3.5rem; } }
 
-/* @media (max-width: 768px) {
-    section.temporadas{
-        display:flex;
-        flex-direction:column;
-        & h2{
-            text-align:center;
-            font-size: 4em;
-        }
-        & h3{
-            margin-bottom: $indent-sangria;
-            text-align:center;
-            font-size: 2.5em;
-        }
-    
-        & p {
-            text-align:center;
-            font-size: 2.2em;
-            text-align: justify;
-            margin-left:$indent-sangria;
-            margin-right:$indent-sangria;
-        }
-    }
-
-} */
 /* PAGINA PLATAFORMAS */
+/* En una misma section se le da estilos para las dos opciones con suscripcion y sin suscripcion con sus imagenes */
 section article div.container h1 {
   margin-top: 3.5rem; }
 
@@ -898,7 +857,6 @@ section article h2.subtituloPlataformas {
   margin-top: 3.5rem;
   text-align: center;
   font-size: 6em;
-  color: white;
   text-transform: uppercase;
   color: white;
   text-align: center;
@@ -920,7 +878,7 @@ section article div.container {
   justify-content: center;
   align-items: center; }
 
-/* MEDIAQUERIES PLATAFORMAS */
+/* Mediaqueries plataformas hasta 992px */
 @media only screen and (max-width: 992px) {
   section article div.container article.vikingsNeon h1.neon {
     font-size: 5em;
@@ -941,6 +899,7 @@ section article div.container {
     justify-content: center;
     align-items: center; } }
 
+/* Mediaqueries plataformas hasta 480px */
 @media only screen and (max-width: 480px) {
   section article div.container article.vikingsNeon h1.neon {
     font-size: 3.2em;
@@ -964,9 +923,11 @@ section article div.container {
     align-items: center; } }
 
 /* PAGINA CONTACTO */
+/* En una misma section se le da estilos para el titulo, la imagen , el efecto maquina escribir y el formulario  */
 section.redesSociales {
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  /* Aca arrancaria el codigo para la animacion de maquina de escribir */ }
   section.redesSociales div.contactImagen, section.redesSociales div.holaaa {
     display: flex;
     flex-direction: column;
@@ -984,13 +945,12 @@ section.redesSociales {
     margin-top: 3.5rem;
     text-align: center;
     font-size: 6em;
-    color: white;
     text-transform: uppercase;
     color: white;
     text-align: center;
     animation: neonGlow 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); }
   section.redesSociales div.wrapper div.static-txt {
-    color: #fff;
+    color: white;
     font-size: 6em;
     font-weight: 400; }
   section.redesSociales div.wrapper ul.dynamic-txts {
@@ -1052,7 +1012,7 @@ section.redesSociales {
       width: 43%;
       height: 38px;
       background: #424241;
-      color: #fff;
+      color: white;
       font-family: 'Roboto', sans-serif;
       font-size: 20px;
       font-weight: 500;
@@ -1085,7 +1045,7 @@ section.redesSociales {
     section.redesSociales form.formulario .boton.dos:hover::after {
       left: 0; }
 
-/* MEDIAQUERIES CONTACTO */
+/* Mediaqueries contacto hasta 768px */
 @media only screen and (max-width: 768px) {
   section.redesSociales {
     display: flex;
@@ -1130,6 +1090,7 @@ section.redesSociales {
     section.redesSociales div.wrapper ul.dynamic-txts li span::after {
       height: 140%; } }
 
+/* Mediaqueries contacto hasta 480px */
 @media only screen and (max-width: 480px) {
   section.redesSociales {
     display: flex;

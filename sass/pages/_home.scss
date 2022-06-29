@@ -1,22 +1,19 @@
 
 /* PAGINA HOME */
 
-h1 {
-    text-align: center;
-    /* margin-top: $spacing-medium; */
-    margin-bottom: $spacing-medium;
-    font-size: $text-large;
-    text-indent: $indent-sangria;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
 
 @font-face {
     font-family: neon;
     src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
 }
+
+/* Titulo vikings con efecto neon azul */
+
 div.container article.vikingsNeon {
         display:flex;
         justify-content:center;
+        margin-bottom: $spacing-medium;
         align-items:center;
         text-align: center;
         vertical-align: middle;
@@ -31,6 +28,8 @@ div.container article.vikingsNeon {
             -webkit-animation: neon 1s ease infinite;
         }
 }
+
+/* Aca empezaria el texto introductorio, un subtitulo y el video */
 
 section.texto {
     display: flex;
@@ -67,7 +66,7 @@ section.texto {
     }
 }
 
-/* MEDIAQUERIES HOME DESDE 480px HASTA 768px */
+/* Mediaqueries home hasta 768px */
 @media only screen and (max-width: 768px) {
     div.container article.vikingsNeon h1.neon {
         padding: 0rem 6rem 0rem 4rem;
@@ -90,7 +89,7 @@ section.texto {
 }
 
 
-/* MEDIAQUERIES HOME DESDE 320px HASTA 480px */
+/* Mediaqueries home hasta 480px */
 @media only screen and (max-width: 480px) {
     div.container article.vikingsNeon h1.neon {
         padding: 0rem 6rem 0rem 4rem;

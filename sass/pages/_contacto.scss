@@ -1,4 +1,6 @@
 /* PAGINA CONTACTO */
+
+/* En una misma section se le da estilos para el titulo, la imagen , el efecto maquina escribir y el formulario  */
 section.redesSociales{
     text-align: center;
     width:100%;
@@ -23,13 +25,15 @@ section.redesSociales{
         font-size: 6em;
         color: map-get($colors,primary);
         text-transform:uppercase;
-        color:white;
+        color: map-get($colors,secondary);
         text-align:center;
         animation: neonGlow 2s infinite alternate $easeInOutQuad;
     }
+
+/* Aca arrancaria el codigo para la animacion de maquina de escribir */
     & div.wrapper {
         div.static-txt{
-        color:#fff;
+        color: map-get($colors,secondary);
         font-size:6em;
         font-weight:400;
         }
@@ -40,7 +44,7 @@ section.redesSociales{
         overflow:hidden;
         }
         ul.dynamic-txts li{
-        color:rgb(163, 177, 50);
+        color: map-get($colors,headercolor);
         list-style:none;
         font-size:6em;
         font-weight:500;
@@ -106,7 +110,7 @@ section.redesSociales{
             width: 43%;
             height: 38px;
             background: #424241;
-            color: #fff;
+            color: map-get($colors,secondary);
             font-family: 'Roboto', sans-serif;
             font-size: 20px;
             font-weight: 500;
@@ -147,7 +151,7 @@ section.redesSociales{
 
 }
 
-/* MEDIAQUERIES CONTACTO */
+/* Mediaqueries contacto hasta 768px */
 
 @media only screen and (max-width: 768px) {
     section.redesSociales{
@@ -210,6 +214,7 @@ section.redesSociales{
 }
 }
 
+/* Mediaqueries contacto hasta 480px */
 @media only screen and (max-width: 480px){
     section.redesSociales{
         display:flex;

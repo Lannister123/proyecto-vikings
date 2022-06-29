@@ -30,7 +30,7 @@ nav.menu {
 
             text-decoration:none;
             font-size: 1.8em;
-            color: rgb(163, 177, 50);
+            color: map-get($colors,headercolor);
         }
         li a:hover{
             border-bottom: 2px solid crimson;
@@ -55,6 +55,7 @@ nav.menu {
     }
     }
 
+    /* mediaqueries header hasta 768px */
     @media only screen and (max-width: 768px){
         nav.menu{
             display:flex;
@@ -67,7 +68,7 @@ nav.menu {
                 align-items:center;
                 & li a {
                     text-decoration:none;
-                    color: rgb(163, 177, 50);
+                    color: map-get($colors,headercolor);
                     font-size:1.5em;
                     }
             }
@@ -92,7 +93,7 @@ nav.menu {
         }
     }   
 
-    /* MEDIAQUERIES HEADER */
+    /* mediaqueries header hasta 480px */
 
 @media only screen  and (max-width: 480px) { 
     nav.menu{
@@ -100,42 +101,4 @@ nav.menu {
            top: 53px;
         }
     }
-
-    
 } 
-
-
-/* @media (max-width: 768px){
-    nav.menu{
-        display:flex;
-        flex-direction:column;
-        justify-content:space-evenly;
-        align-items:center;
-        ul.menuItems {
-            display:none;
-            list-style:none;
-            align-items:center;
-            & li a {
-                text-decoration:none;
-                color: rgb(163, 177, 50);
-                font-size:1.5em;
-                }
-        }
-        #boton {
-            display:block; 
-        } 
-        input[type="checkbox"]{
-            display:block;
-            opacity:0;
-            
-            &:checked ~ ul {
-                display:flex;
-                flex-direction:column;
-                justify-content:center;
-                align-items:center;
-                margin-right:3rem;
-                } 
-        }
-    }
-
-} */
